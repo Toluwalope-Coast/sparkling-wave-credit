@@ -49,13 +49,12 @@ const AppUserCountPage: React.FC = () => {
     endDate: "",
   });
 
-
   const fetchAppUserCount = useCallback(async () => {
     try {
       const [dayResult, weekResult, monthResult] = await Promise.all([
         getAllApiRequest("/api/analytics/public/customer-count/?period=day"),
-        getAllApiRequest("/api/analytics/public/customer-count/?period=month"),
         getAllApiRequest("/api/analytics/public/customer-count/?period=week"),
+        getAllApiRequest("/api/analytics/public/customer-count/?period=month"),
       ]);
 
       setData({
@@ -105,8 +104,6 @@ const AppUserCountPage: React.FC = () => {
       handleFilter();
     }
   }, [dateRange, handleFilter]);
-
-
 
   return (
     <div className="bg-gray-50 p-6">
