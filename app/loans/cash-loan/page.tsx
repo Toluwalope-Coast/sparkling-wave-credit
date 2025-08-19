@@ -6,12 +6,7 @@ import Link from "next/link";
 import {
   FiCheckCircle,
   FiDollarSign,
-  FiTrendingUp,
   FiBriefcase,
-  FiUsers,
-  FiClock,
-  FiShield,
-  FiHeadphones,
 } from "react-icons/fi";
 
 export default function CashLoansPage() {

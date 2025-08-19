@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 interface CardProps {
   title: React.ReactNode;
@@ -8,9 +6,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ title, value }) => {
-  const searchParams = useSearchParams();
-  const period = searchParams.get("period");
-  const page = "active-borrowers";
 
   return (
     <div className="bg-primary rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">

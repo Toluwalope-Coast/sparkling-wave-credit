@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { getAllApiRequest } from "@/lib/apiRequest";
 import Card from "@/components/card/analyticsCard/analyticsCard";
-import CardWithDate from "@/components/card/analyticsCard/analyticsCardWithPage";
+
 import { GoDash } from "react-icons/go";
 import { formatCurrency } from "../../../../utils/FormatCurrency";
 import { BsQuestionCircle } from "react-icons/bs";
@@ -53,7 +53,7 @@ const TotalNetLoanDisbursedPage: React.FC = () => {
     startDate: "",
     endDate: "",
   });
-  const [error, setError] = useState<string | null>(null);
+
 
   const fetchData = useCallback(async () => {
     try {
@@ -108,9 +108,8 @@ const TotalNetLoanDisbursedPage: React.FC = () => {
         filteredNetLoan: 0, // Reset the filtered data
       });
       setLoading((prev) => ({ ...prev, overall: false }));
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error fetching data:", error);
-      setError("Error fetching data. Please try again later.");
       setLoading((prev) => ({ ...prev, overall: false }));
     }
   }, []);
@@ -136,7 +135,7 @@ const TotalNetLoanDisbursedPage: React.FC = () => {
           ) || 0,
       }));
       setLoading((prev) => ({ ...prev, filter: false }));
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error fetching filtered data:", error);
       setLoading((prev) => ({ ...prev, filter: false }));
     }
@@ -148,9 +147,7 @@ const TotalNetLoanDisbursedPage: React.FC = () => {
     }
   }, [dateRange, handleFilter]);
 
-  const handleDateChange = (key: keyof DateRange) => (value: string) => {
-    setDateRange((prev) => ({ ...prev, [key]: value }));
-  };
+
 
   return (
     <div className="bg-gray-50 p-6">

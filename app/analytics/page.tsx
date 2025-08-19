@@ -4,19 +4,8 @@ import React from "react";
 import {
   FiTrendingUp,
   FiUsers,
-  FiDollarSign,
-  FiBarChart,
-  FiActivity,
-  FiCheckCircle,
-  FiAlertCircle,
-  FiClock,
-  FiUserCheck,
-  FiUserX,
-  FiCreditCard,
-  FiPercent,
-  FiDatabase,
   FiSmartphone,
-  FiShield,
+  FiDollarSign,
 } from "react-icons/fi";
 import TotalGrossLoanDisbursedPage from "./views/gross-loans/page";
 import TotalNetLoanDisbursedPage from "./views/total-net-loan-disbursed/page";

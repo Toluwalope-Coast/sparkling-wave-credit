@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import { getAllApiRequest } from "@/lib/apiRequest";
 import Card from "@/components/card/analyticsCard/analyticsCard";
-import CardWithDate from "@/components/card/analyticsCard/analyticsCardWithPage";
+
 import { GoDash } from "react-icons/go";
 
 import { formatCurrency } from "../../../../utils/FormatCurrency";
@@ -124,9 +124,7 @@ const TotalGrossLoanDisbursedPage: React.FC = () => {
     }
   }, [dateRange, handleFilter]);
 
-  const handleDateChange = (key: keyof DateRange) => (value: string) => {
-    setDateRange((prev) => ({ ...prev, [key]: value }));
-  };
+
 
   return (
     <div className="bg-gray-50 p-6">

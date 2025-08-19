@@ -4,17 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
-  FiPhone,
   FiArrowRight,
   FiCheckCircle,
-  FiUsers,
   FiTrendingUp,
-  FiShield,
-  FiClock,
   FiDollarSign,
   FiBriefcase,
   FiChevronDown,
-  FiChevronUp,
 } from "react-icons/fi";
 
 export default function Home() {
@@ -275,7 +270,7 @@ export default function Home() {
                 <p className="text-white text-center">
                   <strong>
                     Do you want to purchase an asset and you are low on cash?
-                    Don't worry we got you covered. Get your dream asset.
+                    Don&apos;t worry we got you covered. Get your dream asset.
                   </strong>
                 </p>
 
@@ -576,7 +571,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed italic">
-                  "{testimonial.testimonial}"
+                  &ldquo;{testimonial.testimonial}&rdquo;
                 </p>
               </div>
             ))}

@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { getAllApiRequest } from "@/lib/apiRequest";
 import Card from "@/components/card/analyticsCard/analyticsCard";
 import { GoDash } from "react-icons/go";
-import CardWithDate from "@/components/card/analyticsCard/analyticsCardWithPage";
+
 import { BsQuestionCircle } from "react-icons/bs";
 
 interface AppUserCountData {
@@ -48,7 +48,7 @@ const AppUserCountPage: React.FC = () => {
     startDate: "",
     endDate: "",
   });
-  const [error, setError] = useState<string | null>(null);
+
 
   const fetchAppUserCount = useCallback(async () => {
     try {
@@ -69,11 +69,8 @@ const AppUserCountPage: React.FC = () => {
         filteredAppUserCount: 0,
       });
       setLoading((prev) => ({ ...prev, overall: false }));
-    } catch (err: any) {
-      setError(
-        err.message ||
-          "Failed to fetch App User Count data. Please try again later."
-      );
+    } catch (err: unknown) {
+      console.error("Failed to fetch App User Count data:", err);
       setLoading((prev) => ({ ...prev, overall: false }));
     }
   }, []);
@@ -97,12 +94,8 @@ const AppUserCountPage: React.FC = () => {
           parseInt((result as ApiResponse).customer_count_by_date || "0") || 0,
       }));
       setLoading((prev) => ({ ...prev, filter: false }));
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error fetching filtered data:", error);
-      setError(
-        error.message ||
-          "Failed to fetch filtered App User Count data. Please try again later."
-      );
       setLoading((prev) => ({ ...prev, filter: false }));
     }
   }, [dateRange]);
@@ -113,9 +106,7 @@ const AppUserCountPage: React.FC = () => {
     }
   }, [dateRange, handleFilter]);
 
-  const handleDateChange = (key: keyof DateRange) => (value: string) => {
-    setDateRange((prev) => ({ ...prev, [key]: value }));
-  };
+
 
   return (
     <div className="bg-gray-50 p-6">

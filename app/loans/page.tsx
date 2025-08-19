@@ -125,7 +125,7 @@ const page = () => {
                 <p className="text-white text-center">
                   <strong>
                     Do you want to purchase an asset and you are low on cash?
-                    Don't worry we got you covered. Get your dream asset.
+                    Don&apos;t worry we got you covered. Get your dream asset.
                   </strong>
                 </p>
 

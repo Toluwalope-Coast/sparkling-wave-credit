@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import { getAllApiRequest } from "@/lib/apiRequest";
 import Card from "@/components/card/analyticsCard/analyticsCard";
-import CardWithDate from "@/components/card/analyticsCard/analyticsCardWithPage";
+
 import { GoDash } from "react-icons/go";
 import { formatCurrency } from "../../../../utils/FormatCurrency";
 import { BsQuestionCircle } from "react-icons/bs";
@@ -53,7 +53,7 @@ const AverageLoanAmountPage: React.FC = () => {
     startDate: "",
     endDate: "",
   });
-  const [error, setError] = useState<string | null>(null);
+
 
   const fetchAverageLoanAmount = useCallback(async (): Promise<void> => {
     try {
@@ -88,9 +88,8 @@ const AverageLoanAmountPage: React.FC = () => {
         filteredLoanAmount: 0.0,
       });
       setLoading((prev) => ({ ...prev, overall: false }));
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error fetching data:", error);
-      setError("Error fetching data. Please try again later.");
       setLoading((prev) => ({ ...prev, overall: false }));
     }
   }, []);
@@ -114,9 +113,8 @@ const AverageLoanAmountPage: React.FC = () => {
           parseFloat((result as ApiResponse).average_loan_amount || "0") || 0.0,
       }));
       setLoading((prev) => ({ ...prev, filter: false }));
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error fetching filtered data:", error);
-      setError("Error fetching filtered data. Please try again later.");
       setLoading((prev) => ({ ...prev, filter: false }));
     }
   }, [dateRange]);
@@ -127,9 +125,7 @@ const AverageLoanAmountPage: React.FC = () => {
     }
   }, [dateRange, handleFilter]);
 
-  const handleDateChange = (key: keyof DateRange) => (value: string) => {
-    setDateRange((prev) => ({ ...prev, [key]: value }));
-  };
+
 
   return (
     <div className="bg-gray-50 p-6">

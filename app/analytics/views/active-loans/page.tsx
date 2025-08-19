@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { getAllApiRequest } from "@/lib/apiRequest";
 import { GoDash } from "react-icons/go";
-import CardWithDate from "@/components/card/analyticsCard/analyticsCardWithPage";
+
 import Card from "@/components/card/analyticsCard/analyticsCard";
 import { formatCurrency } from "../../../../utils/FormatCurrency";
 import { BsQuestionCircle } from "react-icons/bs";
@@ -45,7 +45,7 @@ const ActiveLoansPage: React.FC = () => {
     startDate: "",
     endDate: "",
   });
-  const [error, setError] = useState<string | null>(null);
+
 
   const fetchActiveLoans = useCallback(async () => {
     try {
@@ -62,11 +62,8 @@ const ActiveLoansPage: React.FC = () => {
         filteredActiveLoans: 0,
       });
       setLoading((prev) => ({ ...prev, overall: false }));
-    } catch (err: any) {
-      setError(
-        err.message ||
-          "Failed to fetch active loans data. Please try again later."
-      );
+    } catch (err: unknown) {
+      console.error("Failed to fetch active loans data:", err);
       setLoading((prev) => ({ ...prev, overall: false }));
     }
   }, []);
@@ -90,11 +87,8 @@ const ActiveLoansPage: React.FC = () => {
           (result as ApiResponse).total_active_loans_by_date || 0,
       }));
       setLoading((prev) => ({ ...prev, filter: false }));
-    } catch (error: any) {
-      setError(
-        error.message ||
-          "Failed to fetch filtered active loans data. Please try again later."
-      );
+    } catch (error: unknown) {
+      console.error("Failed to fetch filtered active loans data:", error);
       setLoading((prev) => ({ ...prev, filter: false }));
     }
   }, [dateRange]);
@@ -105,9 +99,7 @@ const ActiveLoansPage: React.FC = () => {
     }
   }, [dateRange, handleFilter]);
 
-  const handleDateChange = (key: keyof DateRange) => (value: string) => {
-    setDateRange((prev) => ({ ...prev, [key]: value }));
-  };
+
 
   return (
     <div className="bg-gray-50 p-6">

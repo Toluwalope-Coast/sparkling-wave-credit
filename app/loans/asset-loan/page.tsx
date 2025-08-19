@@ -6,9 +6,6 @@ import Link from "next/link";
 import {
   FiCheckCircle,
   FiChevronDown,
-  FiTrendingUp,
-  FiBriefcase,
-  FiDollarSign,
   FiZap,
   FiAward,
   FiStar,

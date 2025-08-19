@@ -6,9 +6,7 @@ import Link from "next/link";
 import {
   FiCheckCircle,
   FiChevronDown,
-  FiChevronUp,
   FiMessageSquare,
-  FiUsers,
   FiTrendingUp,
   FiBriefcase,
   FiDollarSign,
@@ -324,7 +322,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <FiMessageSquare className="absolute -top-2 -left-2 text-primary text-3xl opacity-20" />
                   <p className="text-gray-600 leading-relaxed italic pl-6">
-                    "{testimonial.text}"
+                    &ldquo;{testimonial.text}&rdquo;
                   </p>
                 </div>
               </div>
