@@ -107,13 +107,13 @@ const AnalyticsPage = () => {
                 </h3>
                 <p className="text-amber-700 leading-relaxed">
                   The analytical data presented herein does not originate from
-                  the Sparkling Wave Project. Rather, it pertains to a client
+                  the Sparkle Wave Project. Rather, it pertains to a client
                   project that commenced last year, which I managed directly.
-                  The model for Sparkling Wave Credit was developed using
-                  insights and inspiration derived from that prior project.
-                  Accordingly, the data should be viewed solely in that context
-                  and not as a direct representation of Sparkling Wave Project
-                  performance or results.
+                  The model for Sparkle Wave Credit was developed using insights
+                  and inspiration derived from that prior project. Accordingly,
+                  the data should be viewed solely in that context and not as a
+                  direct representation of Sparkle Wave Project performance or
+                  results.
                 </p>
               </div>
             </div>
