@@ -74,9 +74,9 @@ const AnalyticsPage = () => {
               <span className="text-secondary">SW Credit </span>Analytics
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed">
-              At SparkWave Credit, every loan is approved, disbursed, and repaid
-              with full borrower consent. Salary deductions via Remita are
-              automated only after loan acceptance, ensuring transparency,
+              At Sparkle Wave Credit, every loan is approved, disbursed, and
+              repaid with full borrower consent. Salary deductions via Remita
+              are automated only after loan acceptance, ensuring transparency,
               accuracy, and protection against unauthorized charges.
             </p>
           </div>
