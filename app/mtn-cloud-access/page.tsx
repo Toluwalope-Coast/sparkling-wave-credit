@@ -77,8 +77,46 @@ const AnalyticsPage = () => {
               At SparkWave Credit, every loan is approved, disbursed, and repaid
               with full borrower consent. Salary deductions via Remita are
               automated only after loan acceptance, ensuring transparency,
-              accuracy, and protection against unauthorized charges.
+              accuracy, and protection against unauthorized charges.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Disclaimer Section */}
+      <section className="py-8 bg-amber-50 border-b-4 border-amber-200">
+        <div className="container mx-auto px-12">
+          <div className="bg-amber-100 border border-amber-300 rounded-lg p-6">
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 mt-1">
+                <svg
+                  className="w-6 h-6 text-amber-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-amber-800 mb-2">
+                  Important Disclaimer
+                </h3>
+                <p className="text-amber-700 leading-relaxed">
+                  The analytical data presented herein does not originate from
+                  the Sparkling Wave Project. Rather, it pertains to a client
+                  project that commenced last year, which I managed directly.
+                  The model for Sparkling Wave Credit was developed using
+                  insights and inspiration derived from that prior project.
+                  Accordingly, the data should be viewed solely in that context
+                  and not as a direct representation of Sparkling Wave Project
+                  performance or results.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
