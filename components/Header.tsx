@@ -25,8 +25,10 @@ const Header: React.FC = () => {
       name: "Our Loans",
       href: "/loans",
       submenu: [
-        { name: "Cash Loan", href: "/loans/cash-loan" },
-        { name: "Asset Loans", href: "/loans/asset-loan" },
+        { name: "Spark Credit - Civil Servant Loans (Remita Integrated)", href: "/loans/spark-credit" },
+        { name: "Spark Green - Solar & Climate Finance", href: "/loans/spark-green" },
+        { name: "Spark Lyfestyle - Buy Now, Pay Later (BNPL)", href: "/loans/spark-lyfestyle" },
+        { name: "Spark SME - Business Loans", href: "/loans/spark-sme" },
       ],
     },
     // { name: "Analytics", href: "/analytics", submenu: [] },
@@ -64,12 +66,12 @@ const Header: React.FC = () => {
 
               {link.submenu.length > 0 && (
                 <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <ul className="bg-white shadow-lg rounded-md border border-gray-100 min-w-[150px] py-1">
+                  <ul className="bg-white shadow-lg rounded-md border border-gray-100 min-w-[35vw] py-1">
                     {link.submenu.map((sublink, subIdx) => (
                       <li key={subIdx}>
                         <Link
                           href={sublink.href}
-                          className="block px-4 py-2 text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200 first:rounded-t-md last:rounded-b-md"
+                          className="block px-4 py-2 text-gray-700 hover:text-primary hover:font-bold transition-colors duration-200 first:rounded-t-md last:rounded-b-md transition-all ease-in-out 200ms"
                         >
                           {sublink.name}
                         </Link>
