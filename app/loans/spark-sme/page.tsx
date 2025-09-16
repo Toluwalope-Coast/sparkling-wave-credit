@@ -1,28 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   FiCheckCircle,
-  FiChevronDown,
-  FiZap,
   FiShield,
-  FiClock,
-  FiDollarSign,
   FiBriefcase,
-  FiTrendingUp,
-  FiHome,
   FiUsers,
   FiArrowRight,
   FiCheck,
-  FiFileText,
-  FiMapPin,
-  FiPhone,
-  FiCreditCard,
-  FiGift,
-  FiTarget,
-  FiBarChart,
 } from "react-icons/fi";
 
 // Loan Calculator Component
@@ -286,12 +272,7 @@ const PreQualificationForm = () => {
 };
 
 export default function SparkSMEPage() {
-  const [openFAQ, setOpenFAQ] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
-
-  const toggleFAQ = (index: number) => {
-    setOpenFAQ(openFAQ === index ? -1 : index);
-  };
 
   useEffect(() => {
     const handleScroll = () => {

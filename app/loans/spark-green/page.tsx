@@ -11,7 +11,6 @@ import {
   FiClock,
   FiDollarSign,
   FiSun,
-  FiBattery,
   FiHome,
   FiBriefcase,
   FiUsers,
@@ -19,7 +18,6 @@ import {
   FiCheck,
   FiFileText,
   FiMapPin,
-  FiPhone,
 } from "react-icons/fi";
 
 // Solar Project Calculator Component
@@ -354,15 +352,6 @@ export default function SparkGreenPage() {
         "Funds disbursed, equipment installed and commissioned by certified partners.",
       icon: FiSun,
     },
-  ];
-
-  const whyChooseUs = [
-    "Quality hardware through vetted partners",
-    "Faster approvals; clear repayment plan",
-    "Compliance-led, data-driven decisions",
-    "Human support when you need it",
-    "Transparent pricing with no hidden fees",
-    "Flexible payment terms to match your budget",
   ];
 
   const faqData = [
@@ -793,7 +782,7 @@ export default function SparkGreenPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 leading-relaxed italic">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </p>
                   <div className="flex text-yellow-400 mt-4">
                     {[...Array(5)].map((_, i) => (
@@ -870,7 +859,13 @@ export default function SparkGreenPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image src="/FCCPC.png" alt="fccpc logo" width={300} height={300} className="flex justify-center items-center w-full" />
+                <Image
+                  src="/FCCPC.png"
+                  alt="fccpc logo"
+                  width={300}
+                  height={300}
+                  className="flex justify-center items-center w-full"
+                />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     FCCPC Compliant
@@ -882,7 +877,13 @@ export default function SparkGreenPage() {
                 </div>
               </div>
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image src="/ndpc.png" alt="fccpc logo" width={300} height={300} className="flex justify-center items-center w-full" />
+                <Image
+                  src="/ndpc.png"
+                  alt="fccpc logo"
+                  width={300}
+                  height={300}
+                  className="flex justify-center items-center w-full"
+                />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     NDPR Secure
@@ -894,7 +895,13 @@ export default function SparkGreenPage() {
                 </div>
               </div>
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image src="/remita.png" alt="fccpc logo" width={300} height={300} className="flex justify-center items-center w-full" />
+                <Image
+                  src="/remita.png"
+                  alt="fccpc logo"
+                  width={300}
+                  height={300}
+                  className="flex justify-center items-center w-full"
+                />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     Powered by Remita

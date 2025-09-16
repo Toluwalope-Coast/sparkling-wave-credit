@@ -240,28 +240,6 @@ const PreQualificationForm = () => {
   );
 };
 
-// Scroll Animation Hook
-const useScrollAnimation = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById("scroll-trigger");
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight && rect.bottom > 0;
-        setIsVisible(isInView);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check initial state
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return isVisible;
-};
-
 export default function SparkCreditPage() {
   const [openFAQ, setOpenFAQ] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
@@ -336,15 +314,6 @@ export default function SparkCreditPage() {
       description: "Loan disbursed directly to your bank account.",
       icon: FiDollarSign,
     },
-  ];
-
-  const whyChooseUs = [
-    "No collateral required",
-    "Automatic repayment from salary (no stress)",
-    "Transparent deductions via Remita",
-    "Backed by trusted payroll and regulatory frameworks",
-    "FCCPC & NDPR compliant",
-    "24/7 customer support",
   ];
 
   const faqData = [
@@ -716,7 +685,7 @@ export default function SparkCreditPage() {
                     </div>
                   </div>
                   <p className="text-gray-700 leading-relaxed italic">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </p>
                   <div className="flex text-yellow-400 mt-4">
                     {[...Array(5)].map((_, i) => (
@@ -793,7 +762,13 @@ export default function SparkCreditPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image src="/FCCPC.png" alt="fccpc logo" width={300} height={300} className="flex justify-center items-center w-full" />
+                <Image
+                  src="/FCCPC.png"
+                  alt="fccpc logo"
+                  width={300}
+                  height={300}
+                  className="flex justify-center items-center w-full"
+                />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     FCCPC Compliant
@@ -805,7 +780,13 @@ export default function SparkCreditPage() {
                 </div>
               </div>
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image src="/ndpc.png" alt="fccpc logo" width={300} height={300} className="flex justify-center items-center w-full" />
+                <Image
+                  src="/ndpc.png"
+                  alt="fccpc logo"
+                  width={300}
+                  height={300}
+                  className="flex justify-center items-center w-full"
+                />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     NDPR Secure
@@ -817,7 +798,13 @@ export default function SparkCreditPage() {
                 </div>
               </div>
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image src="/remita.png" alt="fccpc logo" width={300} height={300} className="flex justify-center items-center w-full" />
+                <Image
+                  src="/remita.png"
+                  alt="fccpc logo"
+                  width={300}
+                  height={300}
+                  className="flex justify-center items-center w-full"
+                />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     Powered by Remita
