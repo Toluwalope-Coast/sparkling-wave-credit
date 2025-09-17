@@ -99,20 +99,38 @@ const Footer: React.FC = () => {
           <ul className="space-y-4">
             <li>
               <Link
-                href="/loans/cash-loan"
+                href="/loans/spark-credit"
                 className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Cash Loan
+                Spark Credit
               </Link>
             </li>
             <li>
               <Link
-                href="/loans/asset-loan"
+                href="/loans/spark-green"
                 className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Asset Loan
+                Spark Green
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/loans/spark-lyfestyle"
+                className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
+              >
+                <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
+                Spark Lyfestyle
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/loans/spark-sme"
+                className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
+              >
+                <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
+                Spark SME
               </Link>
             </li>
           </ul>
