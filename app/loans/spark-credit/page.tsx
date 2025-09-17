@@ -384,12 +384,12 @@ export default function SparkCreditPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url(/img/banner/spark-credit-hero.jpg)",
+            backgroundImage: "url(/spark-credit-hero.jpg)",
           }}
         ></div>
 
         {/* Primary Color Overlay */}
-        <div className="absolute inset-0 bg-primary opacity-80 z-10"></div>
+        <div className="absolute inset-0 bg-primary opacity-60 z-10"></div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="text-center max-w-4xl mx-auto pt-16 pb-8">
@@ -495,10 +495,10 @@ export default function SparkCreditPage() {
               <div className="relative order-1 lg:order-2">
                 <div className="relative w-full h-64 sm:h-80 lg:h-96">
                   <Image
-                    src="/img/about/spark-credit-overview.jpg"
+                    src="/civil-servant.jpg"
                     alt="Spark Credit Overview"
                     fill
-                    className="object-cover rounded-2xl shadow-xl"
+                    className="object-cover rounded-2xl shadow-xl top-0"
                   />
                 </div>
                 <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 bg-primary text-white p-3 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg">
@@ -822,30 +822,45 @@ export default function SparkCreditPage() {
       {/* Final CTA Section */}
       <section
         id="apply"
-        className="py-20 bg-gradient-to-r from-primary-900 to-primary-700 text-white"
+        className="relative py-20 bg-gradient-to-r from-primary-900 to-primary-700 text-white overflow-hidden"
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Civil Servants Deserve Stress-Free Credit
-            </h2>
-            <p className="text-xl text-gray-200 leading-relaxed mb-8">
-              Apply now and access Spark Credit in just 24–48 hours. No
-              collateral, no stress, just simple credit when you need it.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 text-lg"
-              >
-                Apply for Spark Credit
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/30 transition-all duration-300 text-lg"
-              >
-                Check Balance
-              </Link>
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          style={{
+            backgroundImage: "url(/img/banner/loan.png)",
+          }}
+        ></div>
+
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-primary-900 opacity-40 z-10"></div>
+
+        <div className="container mx-auto px-12 relative z-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6">
+                Civil Servants Deserve Stress-Free Credit
+              </h2>
+              <p className="text-xl text-gray-200 leading-relaxed">
+                Apply now and access Spark Credit in just 24–48 hours. No
+                collateral, no stress, just simple credit when you need it.
+              </p>
+            </div>
+            <div className="text-right">
+              <div className="flex flex-col gap-4 items-end">
+                <Link
+                  href="/contact"
+                  className="bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 text-lg"
+                >
+                  Apply for Spark Credit
+                </Link>
+                <Link
+                  href="/contact"
+                  className="bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/30 transition-all duration-300 text-lg"
+                >
+                  Check Balance
+                </Link>
+              </div>
             </div>
           </div>
         </div>
