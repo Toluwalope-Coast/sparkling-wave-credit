@@ -23,11 +23,20 @@ const Header: React.FC = () => {
     },
     {
       name: "Our Loans",
-      href: "/loans",
+      href: "#",
       submenu: [
-        { name: "Spark Credit - Civil Servant Loans (Remita Integrated)", href: "/loans/spark-credit" },
-        { name: "Spark Green - Solar & Climate Finance", href: "/loans/spark-green" },
-        { name: "Spark Lyfestyle - Buy Now, Pay Later (BNPL)", href: "/loans/spark-lyfestyle" },
+        {
+          name: "Spark Credit - Civil Servant Loans (Remita Integrated)",
+          href: "/loans/spark-credit",
+        },
+        {
+          name: "Spark Green - Solar & Climate Finance",
+          href: "/loans/spark-green",
+        },
+        {
+          name: "Spark Lyfestyle - Buy Now, Pay Later (BNPL)",
+          href: "/loans/spark-lyfestyle",
+        },
         { name: "Spark SME - Business Loans", href: "/loans/spark-sme" },
       ],
     },
