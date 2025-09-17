@@ -10,11 +10,9 @@ import {
   FiArrowRight,
   FiCheck,
   FiChevronDown,
-  FiZap,
   FiClock,
   FiDollarSign,
   FiSmartphone,
-  FiFileText,
   FiStar,
 } from "react-icons/fi";
 
@@ -468,10 +466,10 @@ export default function SparkSMEPage() {
               Running a Business in Nigeria is Tough
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Cash flow dips, supplier deadlines, and growth opportunities don't
-              wait. Spark SME gives you the capital to move fast: buy inventory,
-              upgrade equipment, expand locations, or bridge receivables without
-              slowing down.
+              Cash flow dips, supplier deadlines, and growth opportunities
+              don&apos;t wait. Spark SME gives you the capital to move fast: buy
+              inventory, upgrade equipment, expand locations, or bridge
+              receivables without slowing down.
             </p>
           </div>
         </div>
