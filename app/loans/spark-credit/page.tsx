@@ -379,7 +379,7 @@ export default function SparkCreditPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative text-white py-20 overflow-hidden h-screen">
+      <section className="relative flex justify-center items-center text-white overflow-hidden h-screen">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
