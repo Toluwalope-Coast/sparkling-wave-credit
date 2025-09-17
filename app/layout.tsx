@@ -13,48 +13,48 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title:
-    "Sparkling Wave Investment Company Limited - Fast Business Loans & Asset Financing",
+    "Spark Wave Credit | SME Loans, Civil Servant Loans, Solar Finance & BNPL Nigeria",
   description:
-    "Get quick business loans, asset financing, and cash loans in Nigeria. Fast approval within 24hrs, competitive rates, and flexible repayment terms. Apply online for N50,000 to N7,000,000 loans.",
+    "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPR secure.",
   keywords:
-    "business loans Nigeria, asset financing, cash loans, quick loans, business funding, startup loans, investment company, loan approval, Nigeria loans, business growth financing",
-  authors: [{ name: "Sparkling Wave Investment Company Limited" }],
-  creator: "Sparkling Wave Investment Company Limited",
+    "Spark Wave Credit, SME loans Nigeria, business loans Nigeria, civil servant loans Nigeria, Remita loans, salary-backed loans, solar financing Nigeria, climate finance Nigeria, BNPL Nigeria, buy now pay later Nigeria, pay-as-you-go loans, quick loans Nigeria, Spark SME, Spark Credit, Spark Green, Spark Lyfestyle",
+  authors: [{ name: "Spark Wave Credit" }],
+  creator: "Spark Wave Credit",
   publisher: "Sparkling Wave Investment Company Limited",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://sparklingwavelimited.com.ng"),
+  metadataBase: new URL("https://www.sparkwavecredit.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://sparklingwavelimited.com.ng",
-    siteName: "Sparkling Wave Investment Company Limited",
+    url: "https://www.sparkwavecredit.com",
+    siteName: "Spark Wave Credit",
     title:
-      "Sparkling Wave Investment Company Limited - Fast Business Loans & Asset Financing",
+      "Spark Wave Credit | SME Loans, Civil Servant Loans, Solar Finance & BNPL Nigeria",
     description:
-      "Get quick business loans, asset financing, and cash loans in Nigeria. Fast approval within 24hrs, competitive rates, and flexible repayment terms.",
+      "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPR secure.",
     images: [
       {
-        url: "/img/banner/bradcam2.png",
+        url: "/img/banner/banner.png",
         width: 1200,
         height: 630,
-        alt: "Sparkling Wave Investment Company Limited",
+        alt: "Spark Wave Credit - Smart Finance, Bright Future",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Sparkling Wave Investment Company Limited - Fast Business Loans & Asset Financing",
+      "Spark Wave Credit | SME Loans, Civil Servant Loans, Solar Finance & BNPL Nigeria",
     description:
-      "Get quick business loans, asset financing, and cash loans in Nigeria. Fast approval within 24hrs, competitive rates, and flexible repayment terms.",
-    images: ["/img/banner/bradcam2.png"],
+      "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPR secure.",
+    images: ["/img/banner/banner.png"],
   },
   robots: {
     index: true,
@@ -81,6 +81,106 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialService",
+              "@id": "https://www.sparkwavecredit.com/#org",
+              name: "Spark Wave Credit",
+              url: "https://www.sparkwavecredit.com/",
+              legalName: "Sparkling Wave Investment Company Limited",
+              logo: "https://www.sparkwavecredit.com/static/brand/spark-wave-logo.png",
+              brand: {
+                "@type": "Brand",
+                name: "Spark Wave",
+              },
+              slogan: "Smart Finance, Bright Future",
+              description:
+                "Fast, secure, and transparent financing across SME loans, civil servant loans (Remita), solar & climate finance, and BNPL.",
+              areaServed: "NG",
+              currenciesAccepted: "NGN",
+              paymentAccepted: "Card, BankTransfer, DirectDebit",
+              sameAs: [
+                "https://www.facebook.com/sparkwavecredit",
+                "https://www.instagram.com/sparkwavecredit",
+                "https://www.linkedin.com/company/sparkwavecredit",
+                "https://x.com/sparkwavecredit",
+              ],
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  contactType: "customer support",
+                  telephone: "+234-XXXXXXXXXX",
+                  email: "support@sparkwavecredit.com",
+                  availableLanguage: ["en"],
+                  areaServed: "NG",
+                },
+              ],
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "NG",
+              },
+              knowsAbout: [
+                "SME loans",
+                "civil servant loans via Remita",
+                "solar finance",
+                "climate finance",
+                "BNPL",
+                "loan calculator",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Spark Suite",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    name: "Spark SME — Business Loans",
+                    url: "https://www.sparkwavecredit.com/loans/spark-sme",
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Spark Credit — Civil Servant Loans (Remita)",
+                    url: "https://www.sparkwavecredit.com/loans/spark-credit",
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Spark Green — Solar & Climate Finance",
+                    url: "https://www.sparkwavecredit.com/loans/spark-green",
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Spark Lyfestyle — BNPL",
+                    url: "https://www.sparkwavecredit.com/loans/spark-lyfestyle",
+                  },
+                ],
+              },
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://www.sparkwavecredit.com/#website",
+              url: "https://www.sparkwavecredit.com/",
+              name: "Spark Wave Credit",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://www.sparkwavecredit.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+      </head>
       <body className={roboto.className}>
         <div className="min-h-screen flex flex-col">
           <InternetCheck />
