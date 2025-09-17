@@ -420,12 +420,12 @@ export default function SparkGreenPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative text-white py-20 overflow-hidden">
+      <section className="relative text-white py-20 overflow-hidden h-screen">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url(/img/banner/spark-green-hero.jpg)",
+            backgroundImage: "url(/spark-green-hero.jpg)",
           }}
         ></div>
 
@@ -917,32 +917,44 @@ export default function SparkGreenPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section
-        id="apply"
-        className="py-20 bg-gradient-to-r from-green-600 to-green-800 text-white"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Ready to Go Solar the Smart Way?
-            </h2>
-            <p className="text-xl text-gray-200 leading-relaxed mb-8">
-              Join thousands of Nigerians who have made the switch to clean,
-              reliable energy. Get started with Spark Green today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="bg-yellow-400 text-green-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-all duration-300 text-lg hover:transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                Apply for Spark Green
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/30 transition-all duration-300 text-lg hover:transform hover:-translate-y-1"
-              >
-                Talk to an Advisor on WhatsApp
-              </Link>
+      <section className="relative py-20 bg-gradient-to-r from-primary-900 to-primary-700 text-white overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          style={{
+            backgroundImage: "url(/img/banner/loan.png)",
+          }}
+        ></div>
+
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-primary-900 opacity-40 z-10"></div>
+
+        <div className="container mx-auto px-12 relative z-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6">
+                Ready to Go Solar the Smart Way?
+              </h2>
+              <p className="text-xl text-gray-200 leading-relaxed">
+                Join thousands of Nigerians who have made the switch to clean,
+                reliable energy. Get started with Spark Green today.
+              </p>
+            </div>
+            <div className="text-right">
+              <div className="flex flex-col gap-4 items-end">
+                <Link
+                  href="/contact"
+                  className="bg-yellow-400 text-green-800 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-all duration-300 text-lg hover:transform hover:-translate-y-1 hover:shadow-lg"
+                >
+                  Apply for Spark Green
+                </Link>
+                <Link
+                  href="/contact"
+                  className="bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/30 transition-all duration-300 text-lg hover:transform hover:-translate-y-1"
+                >
+                  Talk to an Advisor on WhatsApp
+                </Link>
+              </div>
             </div>
           </div>
         </div>
