@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       ],
     },
     {
-      name: "Our Loans",
+      name: "Services",
       href: "#",
       submenu: [
         {

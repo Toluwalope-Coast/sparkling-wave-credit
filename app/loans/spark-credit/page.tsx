@@ -304,12 +304,18 @@ export default function SparkCreditPage() {
     },
     {
       number: "03",
-      title: "Approval (24–48h)",
-      description: "Loan offer sent with detailed repayment plan.",
-      icon: FiClock,
+      title: "Eligibility Check",
+      description: "We check your eligibility based on the DTI ratio.",
+      icon: FiCheckCircle,
     },
     {
       number: "04",
+      title: "Approval (24–48h)",
+      description: "Loan offer sent with detailed repayment plan.",
+      icon: FiCheckCircle,
+    },
+    {
+      number: "05",
       title: "Receive Funds",
       description: "Loan disbursed directly to your bank account.",
       icon: FiDollarSign,
@@ -554,7 +560,7 @@ export default function SparkCreditPage() {
       {/* Eligibility & Documents Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -564,9 +570,7 @@ export default function SparkCreditPage() {
                   {[
                     "Must be a Nigerian civil servant",
                     "Salary must be paid via Remita",
-                    "Valid ID (government-issued)",
                     "BVN",
-                    "Last 3 months' payslip or Remita records",
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <FiCheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
@@ -580,10 +584,6 @@ export default function SparkCreditPage() {
                   Required Documents
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                    <FiFileText className="w-6 h-6 text-primary" />
-                    <span className="text-gray-700">Valid Government ID</span>
-                  </div>
                   <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
                     <FiFileText className="w-6 h-6 text-primary" />
                     <span className="text-gray-700">BVN Verification</span>

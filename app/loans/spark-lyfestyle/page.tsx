@@ -882,7 +882,13 @@ export default function SparkLyfestylePage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <FiShield className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <Image
+                  src="/fccpc-ndpc.png"
+                  alt="FCCPC"
+                  width={100}
+                  height={100}
+                  className="flex justify-center items-center w-full"
+                />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   FCCPC & NDPR Compliant
                 </h3>
@@ -891,14 +897,14 @@ export default function SparkLyfestylePage() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <FiCheckCircle className="w-12 h-12 text-blue-500 mx-auto mb-4" />
+                <FiCheckCircle className="w-24 h-24 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Transparent Pricing Policy
                 </h3>
                 <p className="text-gray-600 text-sm">No hidden fees policy</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <FiUsers className="w-12 h-12 text-purple-500 mx-auto mb-4" />
+                <FiUsers className="w-24 h-24 text-purple-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Vendor-Vetted Ecosystem
                 </h3>
