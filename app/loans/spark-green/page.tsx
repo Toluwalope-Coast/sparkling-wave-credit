@@ -633,6 +633,54 @@ export default function SparkGreenPage() {
         </div>
       </section>
 
+      {/* Why Choose Spark Green Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Why Choose Spark Green?
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="text-left">
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Quality hardware through vetted partners
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Faster approvals; clear repayment plan
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Compliance-led, data-driven decisions
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Human support when you need it
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-green-600 border-2 border-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 text-lg"
+            >
+              Talk to an Advisor on WhatsApp
+              <FiArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Eligibility & Documents Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -747,8 +795,56 @@ export default function SparkGreenPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Why Choose Spark Green Section */}
       <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Why Choose Spark Green?
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="text-left">
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Quality hardware through vetted partners
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Faster approvals; clear repayment plan
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Compliance-led, data-driven decisions
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FiCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">
+                      Human support when you need it
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-green-600 border-2 border-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 text-lg"
+            >
+              Talk to an Advisor on WhatsApp
+              <FiArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -762,10 +858,7 @@ export default function SparkGreenPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {testimonials.map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-50 rounded-2xl p-8 shadow-lg"
-                >
+                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                       <span className="text-green-600 font-bold text-lg">
@@ -797,7 +890,7 @@ export default function SparkGreenPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -813,10 +906,10 @@ export default function SparkGreenPage() {
               {faqData.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl overflow-hidden"
+                  className="bg-gray-50 rounded-2xl overflow-hidden"
                 >
                   <div
-                    className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-all duration-300"
+                    className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-all duration-300"
                     onClick={() => toggleFAQ(index)}
                   >
                     <h3 className="text-lg font-semibold text-gray-900 pr-4">
@@ -858,58 +951,30 @@ export default function SparkGreenPage() {
               Compliance & Trust
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image
-                  src="/FCCPC.png"
-                  alt="fccpc logo"
-                  width={300}
-                  height={300}
-                  className="flex justify-center items-center w-full"
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    FCCPC Compliant
-                  </h3>
-                  <p className="text-gray-600">
-                    Fully compliant with Federal Competition and Consumer
-                    Protection Commission regulations
-                  </p>
-                </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <FiShield className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  FCCPC & NDPR Compliant
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Fully compliant with Nigerian financial regulations
+                </p>
               </div>
-              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image
-                  src="/ndpc.png"
-                  alt="fccpc logo"
-                  width={300}
-                  height={300}
-                  className="flex justify-center items-center w-full"
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    NDPR Secure
-                  </h3>
-                  <p className="text-gray-600">
-                    Your data is protected under Nigeria Data Protection
-                    Regulation
-                  </p>
-                </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <FiCheckCircle className="w-12 h-12 text-blue-500 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  Transparent Fee Policy
+                </h3>
+                <p className="text-gray-600 text-sm">No hidden fees policy</p>
               </div>
-              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
-                <Image
-                  src="/remita.png"
-                  alt="fccpc logo"
-                  width={300}
-                  height={300}
-                  className="flex justify-center items-center w-full"
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Powered by Remita
-                  </h3>
-                  <p className="text-gray-600">
-                    Trusted payroll integration for seamless salary verification
-                  </p>
-                </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <FiUsers className="w-12 h-12 text-purple-500 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  Partner Due-Diligence
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Quality standards and vetting processes
+                </p>
               </div>
             </div>
           </div>

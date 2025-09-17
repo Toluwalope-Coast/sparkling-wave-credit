@@ -371,7 +371,7 @@ export default function SparkSMEPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: "url(/spark-sme-hero.webp)",
+            backgroundImage: "url(/spark-sme-hero.jpg)",
           }}
         ></div>
 
