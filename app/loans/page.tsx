@@ -11,7 +11,7 @@ const page = () => {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative text-white py-20 overflow-hidden">
+      <section className="relative text-white py-20 overflow-hidden h-screen">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
