@@ -604,7 +604,7 @@ export default function SparkCreditPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -616,7 +616,7 @@ export default function SparkCreditPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {howItWorks.map((step, index) => (
                 <div key={index} className="text-center relative">
                   <div className="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 relative z-10">
@@ -632,9 +632,7 @@ export default function SparkCreditPage() {
                     {step.description}
                   </p>
                   {index < howItWorks.length - 1 && (
-                    <div className="hidden lg:block absolute top-10 left-1/2 w-full h-0.5 bg-gray-200 -z-10">
-                      <div className="w-full h-full bg-primary"></div>
-                    </div>
+                    <div className="hidden lg:block absolute top-10 left-1/2 w-1/2 h-0.5 bg-primary -z-10 transform translate-x-0"></div>
                   )}
                 </div>
               ))}
