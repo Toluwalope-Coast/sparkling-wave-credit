@@ -116,11 +116,13 @@ const LoanCalculator = () => {
 // Pre-qualification Form Component
 const PreQualificationForm = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
+    firstName: "",
+    lastName: "",
+    middleName: "",
+    accountNumber: "",
+    bankName: "",
     bvn: "",
     phoneNumber: "",
-    mda: "",
-    salaryRange: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -145,87 +147,117 @@ const PreQualificationForm = () => {
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Full Name
-          </label>
-          <input
-            type="text"
-            name="fullName"
-            value={formData.fullName}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-3 border border-gray-300 text-gray-900 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-            placeholder="Enter your full name"
-          />
-        </div>
-
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              BVN
+              First Name
             </label>
             <input
               type="text"
-              name="bvn"
-              value={formData.bvn}
+              name="firstName"
+              value={formData.firstName}
               onChange={handleChange}
               required
-              maxLength={11}
-              className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-              placeholder="11-digit BVN"
+              className="w-full px-4 py-3 border border-gray-300 text-gray-900 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+              placeholder="Teresa"
             />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              Phone Number
+              Last Name
             </label>
             <input
-              type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
+              type="text"
+              name="lastName"
+              value={formData.lastName}
               onChange={handleChange}
               required
               className="w-full px-4 py-3 border border-gray-300 text-gray-900 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-              placeholder="08012345678"
+              placeholder="Stoker"
             />
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            MDA / Employer Name
+            Middle Name (Optional)
           </label>
           <input
             type="text"
-            name="mda"
-            value={formData.mda}
+            name="middleName"
+            value={formData.middleName}
             onChange={handleChange}
-            required
             className="w-full px-4 py-3 border border-gray-300 text-gray-900 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-            placeholder="e.g., Federal Ministry of Education"
+            placeholder="R"
           />
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Salary Range
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 text-gray-900 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+            placeholder="08012345678"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Bank Name
           </label>
           <select
-            name="salaryRange"
-            value={formData.salaryRange}
+            name="bankName"
+            value={formData.bankName}
             onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
           >
-            <option value="">Select salary range</option>
-            <option value="50k-100k">₦50,000 - ₦100,000</option>
-            <option value="100k-200k">₦100,000 - ₦200,000</option>
-            <option value="200k-300k">₦200,000 - ₦300,000</option>
-            <option value="300k-400k">₦300,000 - ₦400,000</option>
-            <option value="400k-500k">₦400,000 - ₦500,000</option>
-            <option value="500k+">₦500,000+</option>
+            <option value="">Select Bank</option>
+            <option value="First Bank">First Bank</option>
+            <option value="Access Bank">Access Bank</option>
+            <option value="GTBank">GTBank</option>
+            <option value="Zenith Bank">Zenith Bank</option>
+            <option value="UBA">UBA</option>
+            <option value="FCMB">FCMB</option>
+            <option value="Stanbic IBTC">Stanbic IBTC</option>
+            <option value="Union Bank">Union Bank</option>
           </select>
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Account Number
+          </label>
+          <input
+            type="text"
+            name="accountNumber"
+            value={formData.accountNumber}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border border-gray-300 text-gray-900 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+            placeholder="5012284010"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            BVN
+          </label>
+          <input
+            type="text"
+            name="bvn"
+            value={formData.bvn}
+            onChange={handleChange}
+            required
+            maxLength={11}
+            className="w-full px-4 py-3 border border-gray-300 text-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+            placeholder="22222222223"
+          />
         </div>
 
         <button

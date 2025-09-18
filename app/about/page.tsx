@@ -45,24 +45,24 @@ export default function AboutPage() {
   const advantages = [
     {
       number: "01",
-      title: "Cash Loan",
+      title: "Spark SME",
       description:
-        "Experience the convenience of rapid cash access with Sparkling Wave's cash loans. Our hassle-free application process and swift approval mean you can access funds when you need them most, without delay or inconvenience.",
-      icon: FiDollarSign,
+        "Empower your business growth with our comprehensive SME loan solutions. From working capital to expansion funding, we provide the financial support your business needs to thrive and scale effectively.",
+      icon: FiBriefcase,
     },
     {
       number: "02",
-      title: "Asset Loan",
+      title: "Spark Credit",
       description:
-        "You unlock the potential of owning an asset with Sparkling Wave's asset loan. Benefit from our efficient application process and rapid approval, accessing the capital you need to leverage your assets effectively.",
-      icon: FiTrendingUp,
+        "Experience seamless salary-backed loans for civil servants through our Remita integration. Quick approval, flexible terms, and transparent processes designed specifically for government employees.",
+      icon: FiDollarSign,
     },
     {
       number: "03",
-      title: "Business Loan",
+      title: "Spark Green",
       description:
-        "With our business loan, you empower the growth of your business. Our seamless application process and expedited approval ensure you access the funds necessary to propel your business forward swiftly and efficiently.",
-      icon: FiBriefcase,
+        "Invest in a sustainable future with our solar and climate finance solutions. From solar installations to green energy projects, we support your environmental goals while building financial stability.",
+      icon: FiTrendingUp,
     },
   ];
 
@@ -85,19 +85,19 @@ export default function AboutPage() {
   ];
 
   const brands = [
-    { src: "/img/brand/brand1.png", alt: "Brand 1" },
+    // { src: "/img/brand/brand1.png", alt: "Brand 1" },
+    {
+      src: "/img/brand/brand6.png",
+      alt: "fccpc",
+      href: "",
+    },
+    { src: "/img/brand/brand7.png", alt: "npdr" },
+    { src: "/img/brand/brand8.png", alt: "remita" },
     {
       src: "/img/brand/brand2.png",
       alt: "Brand 2",
       href: "https://www.coastresearchtechnology.com.ng",
     },
-    { src: "/img/brand/brand3.png", alt: "Brand 3" },
-    {
-      src: "/img/brand/brand4.png",
-      alt: "Brand 4",
-      href: "https://greenwayinfotech.netlify.app/",
-    },
-    { src: "/img/brand/brand5.png", alt: "Brand 5" },
   ];
 
   return (
@@ -118,12 +118,56 @@ export default function AboutPage() {
         <div className="container mx-auto px-12 relative z-20">
           <div className="text-center max-w-4xl mx-auto pt-24">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              About <span className="text-secondary">Us</span>
+              About <span className="text-secondary">Spark Wave</span>
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed">
+            <p className="text-xl text-gray-200 leading-relaxed mb-4">
+              Empowering People, Enabling Growth.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
               We are more than just a financial services provider—we are
               visionaries, innovators, and partners in progress.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Our Mission & Vision
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Driving financial empowerment across Africa through innovative
+              solutions
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-2xl font-bold text-primary-800 mb-4 flex items-center gap-3">
+                <FiTrendingUp className="w-8 h-8" />
+                Our Mission
+              </h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                To provide accessible, innovative, and reliable financial
+                solutions that empower individuals and businesses to grow,
+                thrive, and achieve long-term financial stability.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <h3 className="text-2xl font-bold text-secondary-800 mb-4 flex items-center gap-3">
+                <FiBriefcase className="w-8 h-8" />
+                Our Vision
+              </h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                To be Africa's leading inclusive investment and credit solutions
+                company, driving economic growth through financial empowerment
+                and technology.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -142,15 +186,15 @@ export default function AboutPage() {
               />
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
               <h2 className="text-4xl font-bold text-gray-900">
-                We provide loan for any purpose
+                Smart Finance, Bright Future
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 At Sparkling Wave Investment Company Limited, we are more than
                 just a financial services provider—we are visionaries,
                 innovators, and partners in progress. Founded with a clear
-                mission to revolutionize the financial landscape. Our company is
+                mission to revolutionize the financial landscape, our company is
                 committed to empowering individuals and businesses with
                 accessible and efficient solutions that drive economic
                 empowerment and foster growth.
@@ -158,10 +202,10 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 {[
-                  "Specializing in Asset Loans, Cash Loans, and Business Loans",
+                  "Spark Suite: SME Loans, Civil Servant Loans, Solar Finance & BNPL",
                   "Cutting-edge Technology for Tailored Financial Solutions",
                   "Empowering Communities & Fostering Growth",
-                  "We provide online instant cash loans",
+                  "Seamless Remita Integration for Civil Servants",
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <FiCheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
@@ -186,10 +230,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-12 lg:px-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Advantages of Our Product
+              The Spark Suite
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-              Empowering Finance, Enhancing Mobility
+              Empowering People, Enabling Growth
             </p>
           </div>
 
@@ -336,9 +380,9 @@ export default function AboutPage() {
         <div className="container mx-auto px-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
             {brands.map((brand, index) => (
-              <div key={index} className="flex justify-center">
+              <div key={index} className="flex justify-center w-full">
                 {brand.href ? (
-                  <a
+                  <Link
                     href={brand.href}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -347,18 +391,18 @@ export default function AboutPage() {
                     <Image
                       src={brand.src}
                       alt={brand.alt}
-                      width={120}
-                      height={60}
-                      className="h-12 w-auto object-contain"
+                      width={200}
+                      height={200}
+                      className="h-20 w-auto object-contain"
                     />
-                  </a>
+                  </Link>
                 ) : (
                   <Image
                     src={brand.src}
                     alt={brand.alt}
-                    width={120}
-                    height={60}
-                    className="h-12 w-auto object-contain"
+                    width={200}
+                    height={200}
+                    className="h-20 w-auto object-contain"
                   />
                 )}
               </div>
@@ -384,10 +428,10 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6">
-                Apply for a Business, Asset or Cash loan.
+                Ready to Spark Your Financial Future?
               </h2>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Ready to take your business to the next level? Get started with
+                Choose from our comprehensive Spark Suite and get started with
                 our quick and easy loan application process.
               </p>
             </div>

@@ -74,6 +74,22 @@ export default function Home() {
     },
   ];
 
+  const brands = [
+    // { src: "/img/brand/brand1.png", alt: "Brand 1" },
+    {
+      src: "/img/brand/brand6.png",
+      alt: "fccpc",
+      href: "",
+    },
+    { src: "/img/brand/brand7.png", alt: "npdr" },
+    { src: "/img/brand/brand8.png", alt: "remita" },
+    {
+      src: "/img/brand/brand2.png",
+      alt: "Brand 2",
+      href: "https://www.coastresearchtechnology.com.ng",
+    },
+  ];
+
   return (
     <>
       <script
@@ -933,24 +949,10 @@ export default function Home() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-12">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-              {[
-                { src: "/img/brand/brand1.png", alt: "Brand 1" },
-                {
-                  src: "/img/brand/brand2.png",
-                  alt: "Brand 2",
-                  href: "https://www.coastresearchtechnology.com.ng",
-                },
-                { src: "/img/brand/brand3.png", alt: "Brand 3" },
-                {
-                  src: "/img/brand/brand4.png",
-                  alt: "Brand 4",
-                  href: "https://greenwayinfotech.netlify.app/",
-                },
-                { src: "/img/brand/brand5.png", alt: "Brand 5" },
-              ].map((brand, index) => (
-                <div key={index} className="flex justify-center">
+              {brands.map((brand, index) => (
+                <div key={index} className="flex justify-center w-full">
                   {brand.href ? (
-                    <a
+                    <Link
                       href={brand.href}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -959,18 +961,18 @@ export default function Home() {
                       <Image
                         src={brand.src}
                         alt={brand.alt}
-                        width={120}
-                        height={60}
-                        className="h-12 w-auto object-contain"
+                        width={200}
+                        height={200}
+                        className="h-20 w-auto object-contain"
                       />
-                    </a>
+                    </Link>
                   ) : (
                     <Image
                       src={brand.src}
                       alt={brand.alt}
-                      width={120}
-                      height={60}
-                      className="h-12 w-auto object-contain"
+                      width={200}
+                      height={200}
+                      className="h-20 w-auto object-contain"
                     />
                   )}
                 </div>
