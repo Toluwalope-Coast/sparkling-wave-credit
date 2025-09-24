@@ -606,7 +606,7 @@ export default function Home() {
 
             <div className="text-center mt-12">
               <Link
-                href="/loans"
+                href="/loans/spark-credit"
                 className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-600 transition-all duration-300"
               >
                 See Full Process
@@ -1073,7 +1073,7 @@ export default function Home() {
                 Apply today and unlock brighter opportunities.
               </p>
               <Link
-                href="/loans"
+                href="/loans/spark-credit"
                 className="inline-block bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 text-lg hover:transform hover:-translate-y-1 hover:shadow-lg"
               >
                 Apply Now
