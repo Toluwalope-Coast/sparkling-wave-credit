@@ -41,7 +41,7 @@ const ActiveLoansPage: React.FC = () => {
     overall: true,
     filter: false,
   });
-  const [dateRange, setDateRange] = useState<DateRange>({
+  const [dateRange] = useState<DateRange>({
     startDate: "",
     endDate: "",
   });

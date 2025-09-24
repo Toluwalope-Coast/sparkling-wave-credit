@@ -163,9 +163,9 @@ export default function AboutPage() {
                 Our Vision
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                To be Africa's leading inclusive investment and credit solutions
-                company, driving economic growth through financial empowerment
-                and technology.
+                To be Africa&apos;s leading inclusive investment and credit
+                solutions company, driving economic growth through financial
+                empowerment and technology.
               </p>
             </div>
           </div>

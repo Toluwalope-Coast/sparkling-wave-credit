@@ -6,13 +6,11 @@ import { useState } from "react";
 import {
   FiArrowRight,
   FiCheckCircle,
-  FiTrendingUp,
   FiDollarSign,
   FiBriefcase,
   FiChevronDown,
   FiShield,
   FiZap,
-  FiUsers,
   FiSun,
   FiShoppingCart,
   FiCreditCard,
@@ -83,6 +81,7 @@ export default function Home() {
     },
     { src: "/img/brand/brand7.png", alt: "npdr" },
     { src: "/img/brand/brand8.png", alt: "remita" },
+    { src: "/img/brand/wema-bank.png", alt: "wema bank" },
     {
       src: "/img/brand/brand2.png",
       alt: "Brand 2",
@@ -712,12 +711,12 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  number: "₦100M+",
+                  number: "₦35M+",
                   label: "disbursed in loans",
                   color: "text-green-600",
                 },
                 {
-                  number: "5,000+",
+                  number: "3,000+",
                   label: "customers served",
                   color: "text-blue-600",
                 },
@@ -945,42 +944,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Brands Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-12">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-              {brands.map((brand, index) => (
-                <div key={index} className="flex justify-center w-full">
-                  {brand.href ? (
-                    <Link
-                      href={brand.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:opacity-80 transition-opacity"
-                    >
-                      <Image
-                        src={brand.src}
-                        alt={brand.alt}
-                        width={200}
-                        height={200}
-                        className="h-20 w-auto object-contain"
-                      />
-                    </Link>
-                  ) : (
-                    <Image
-                      src={brand.src}
-                      alt={brand.alt}
-                      width={200}
-                      height={200}
-                      className="h-20 w-auto object-contain"
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Testimonials Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-12">
@@ -1056,24 +1019,10 @@ export default function Home() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-12">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-              {[
-                { src: "/img/brand/brand1.png", alt: "Brand 1" },
-                {
-                  src: "/img/brand/brand2.png",
-                  alt: "Brand 2",
-                  href: "https://www.coastresearchtechnology.com.ng",
-                },
-                { src: "/img/brand/brand3.png", alt: "Brand 3" },
-                {
-                  src: "/img/brand/brand4.png",
-                  alt: "Brand 4",
-                  href: "https://greenwayinfotech.netlify.app/",
-                },
-                { src: "/img/brand/brand5.png", alt: "Brand 5" },
-              ].map((brand, index) => (
-                <div key={index} className="flex justify-center">
+              {brands.map((brand, index) => (
+                <div key={index} className="flex justify-center w-full">
                   {brand.href ? (
-                    <a
+                    <Link
                       href={brand.href}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -1082,18 +1031,18 @@ export default function Home() {
                       <Image
                         src={brand.src}
                         alt={brand.alt}
-                        width={120}
-                        height={60}
-                        className="h-12 w-auto object-contain"
+                        width={200}
+                        height={200}
+                        className="h-20 w-auto object-contain"
                       />
-                    </a>
+                    </Link>
                   ) : (
                     <Image
                       src={brand.src}
                       alt={brand.alt}
-                      width={120}
-                      height={60}
-                      className="h-12 w-auto object-contain"
+                      width={200}
+                      height={200}
+                      className="h-20 w-auto object-contain"
                     />
                   )}
                 </div>

@@ -8,7 +8,6 @@ import {
   FiChevronDown,
   FiZap,
   FiShield,
-  FiClock,
   FiDollarSign,
   FiSmartphone,
   FiFileText,
