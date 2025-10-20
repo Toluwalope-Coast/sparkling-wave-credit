@@ -88,6 +88,16 @@ export default function Home() {
       alt: "Brand 2",
       href: "https://www.coastresearchtechnology.com.ng",
     },
+    {
+      src: "/img/brand/coast-infrastructure.png",
+      alt: "Coast System & Technologies",
+      href: "https://www.coastinfrastructure.com.ng",
+    },
+    {
+      src: "/img/brand/Coast-System-&-Technologies.png",
+      alt: "Coast System & Technologies",
+      href: "https://coastsystemtechnologies.com.ng",
+    },
   ];
 
   return (
