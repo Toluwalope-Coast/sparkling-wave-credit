@@ -11,6 +11,7 @@ import {
   FiBriefcase,
   FiDollarSign,
 } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   const [openFAQ, setOpenFAQ] = useState(0);
@@ -93,22 +94,25 @@ export default function AboutPage() {
     },
     { src: "/img/brand/brand7.png", alt: "npdr" },
     { src: "/img/brand/brand8.png", alt: "remita" },
+    { src: "/img/brand/wema-bank.png", alt: "wema bank" },
     {
       src: "/img/brand/brand2.png",
-      alt: "Coast Research Technology",
+      alt: "Brand 2",
       href: "https://www.coastresearchtechnology.com.ng",
+    },
+    {
+      src: "/img/brand/coast-infrastructure.png",
+      alt: "Coast System & Technologies",
+      href: "https://www.coastinfrastructure.com.ng",
     },
     {
       src: "/img/brand/Coast-System-&-Technologies.png",
       alt: "Coast System & Technologies",
-      href: "https://www.coastsystemtechnologies.com.ng",
-    },
-    {
-      src: "/img/brand/coast-infrastructure.png",
-      alt: "Coast Infrastructure",
-      href: "https://www.coastinfrastructure.com.ng",
+      href: "https://coastsystemtechnologies.com.ng",
     },
   ];
+
+  const repeatedBrands = [...brands, ...brands];
 
   return (
     <main className="min-h-screen">
@@ -398,44 +402,61 @@ export default function AboutPage() {
       </section>
 
       {/* Brands Section */}
-      <section className="py-16 bg-white container mx-auto px-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mb-8">
-          {brands.map((brand, index) => (
-            <div key={index} className="flex justify-center w-full">
-              {brand.href ? (
-                <Link
-                  href={brand.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                >
+      <section className="py-16 bg-white overflow-hidden">
+        <div className="relative w-full">
+          <motion.div
+            className="flex gap-12 items-center"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              repeat: Infinity,
+              ease: "linear",
+              duration: 25, // speed of the scroll (lower = faster)
+            }}
+          >
+            {repeatedBrands.map((brand, index) => (
+              <div
+                key={index}
+                className="flex justify-center flex-shrink-0 w-40"
+              >
+                {brand.href ? (
+                  <Link
+                    href={brand.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <Image
+                      src={brand.src}
+                      alt={brand.alt}
+                      width={160}
+                      height={160}
+                      className="h-20 w-auto object-contain"
+                    />
+                  </Link>
+                ) : (
                   <Image
                     src={brand.src}
                     alt={brand.alt}
-                    width={200}
-                    height={200}
+                    width={160}
+                    height={160}
                     className="h-20 w-auto object-contain"
                   />
-                </Link>
-              ) : (
-                <Image
-                  src={brand.src}
-                  alt={brand.alt}
-                  width={200}
-                  height={200}
-                  className="h-20 w-auto object-contain"
-                />
-              )}
-            </div>
-          ))}
+                )}
+              </div>
+            ))}
+          </motion.div>
         </div>
-        <Image
-          src="/img/brand/ndpc-barcode.jpg"
-          alt="ndpc"
-          width={400}
-          height={400}
-          className="flex justify-center mx-auto"
-        />
+
+        {/* Barcode Image (Static Below) */}
+        <div className="mt-12 flex justify-center">
+          <Image
+            src="/img/brand/ndpc-barcode.jpg"
+            alt="ndpc"
+            width={400}
+            height={400}
+            className="mx-auto"
+          />
+        </div>
       </section>
 
       {/* CTA Section */}

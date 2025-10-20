@@ -17,6 +17,7 @@ import {
   FiCreditCard,
   FiGlobe,
 } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [openFAQ, setOpenFAQ] = useState(0); // 0 = first FAQ open by default
@@ -99,6 +100,8 @@ export default function Home() {
       href: "https://coastsystemtechnologies.com.ng",
     },
   ];
+
+  const repeatedBrands = [...brands, ...brands];
 
   return (
     <>
@@ -349,7 +352,7 @@ export default function Home() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              {/* Spark Credit */}
+              {/* Sparkwave Credit */}
               <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                 <div className="relative h-48">
                   <Image
@@ -367,7 +370,7 @@ export default function Home() {
                       </span>
                     </div>
                     <h3 className="text-2xl font-bold text-white">
-                      Spark Credit
+                      Sparkwave Credit
                     </h3>
                     <p className="text-white/90 text-sm">₦50,000 - ₦200,000</p>
                   </div>
@@ -401,7 +404,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Spark SME */}
+              {/* Sparkwave SME */}
               <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                 <div className="relative h-48">
                   <Image
@@ -418,7 +421,9 @@ export default function Home() {
                         Business Loans
                       </span>
                     </div>
-                    <h3 className="text-2xl font-bold text-white">Spark SME</h3>
+                    <h3 className="text-2xl font-bold text-white">
+                      Sparkwave SME
+                    </h3>
                     <p className="text-white/90 text-sm">
                       ₦100,000 - ₦1,000,000
                     </p>
@@ -453,7 +458,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Spark Green */}
+              {/* Sparkwave Green */}
               <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                 <div className="relative h-48">
                   <Image
@@ -471,7 +476,7 @@ export default function Home() {
                       </span>
                     </div>
                     <h3 className="text-2xl font-bold text-white">
-                      Spark Green
+                      Sparkwave Green
                     </h3>
                     <p className="text-white/90 text-sm">
                       ₦200,000 - ₦2,000,000
@@ -507,7 +512,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Spark Lyfestyle */}
+              {/* Sparkwave Lyfestyle */}
               <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
                 <div className="relative h-48">
                   <Image
@@ -523,7 +528,7 @@ export default function Home() {
                       <span className="text-white font-semibold">BNPL</span>
                     </div>
                     <h3 className="text-2xl font-bold text-white">
-                      Spark Lyfestyle
+                      Sparkwave Lyfestyle
                     </h3>
                     <p className="text-white/90 text-sm">
                       ₦50,000 - ₦1,500,000
@@ -1031,11 +1036,22 @@ export default function Home() {
         </section>
 
         {/* Brands Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-12">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-              {brands.map((brand, index) => (
-                <div key={index} className="flex justify-center w-full">
+        <section className="py-16 bg-white overflow-hidden">
+          <div className="relative w-full">
+            <motion.div
+              className="flex gap-12 items-center"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                repeat: Infinity,
+                ease: "linear",
+                duration: 25, // speed of the scroll (lower = faster)
+              }}
+            >
+              {repeatedBrands.map((brand, index) => (
+                <div
+                  key={index}
+                  className="flex justify-center flex-shrink-0 w-40"
+                >
                   {brand.href ? (
                     <Link
                       href={brand.href}
@@ -1046,8 +1062,8 @@ export default function Home() {
                       <Image
                         src={brand.src}
                         alt={brand.alt}
-                        width={200}
-                        height={200}
+                        width={160}
+                        height={160}
                         className="h-20 w-auto object-contain"
                       />
                     </Link>
@@ -1055,14 +1071,25 @@ export default function Home() {
                     <Image
                       src={brand.src}
                       alt={brand.alt}
-                      width={200}
-                      height={200}
+                      width={160}
+                      height={160}
                       className="h-20 w-auto object-contain"
                     />
                   )}
                 </div>
               ))}
-            </div>
+            </motion.div>
+          </div>
+
+          {/* Barcode Image (Static Below) */}
+          <div className="mt-12 flex justify-center">
+            <Image
+              src="/img/brand/ndpc-barcode.jpg"
+              alt="ndpc"
+              width={400}
+              height={400}
+              className="mx-auto"
+            />
           </div>
         </section>
 
