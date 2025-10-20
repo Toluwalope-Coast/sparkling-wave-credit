@@ -10,6 +10,7 @@ import {
   FiTrendingUp,
   FiBriefcase,
   FiDollarSign,
+  FiShoppingBag,
 } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -46,24 +47,31 @@ export default function AboutPage() {
   const advantages = [
     {
       number: "01",
-      title: "Spark SME",
+      title: "Sparkwave SME",
       description:
         "Empower your business growth with our comprehensive SME loan solutions. From working capital to expansion funding, we provide the financial support your business needs to thrive and scale effectively.",
       icon: FiBriefcase,
     },
     {
       number: "02",
-      title: "Spark Credit",
+      title: "Sparkwave Credit",
       description:
         "Experience seamless salary-backed loans for civil servants through our Remita integration. Quick approval, flexible terms, and transparent processes designed specifically for government employees.",
       icon: FiDollarSign,
     },
     {
       number: "03",
-      title: "Spark Green",
+      title: "Sparkwave Green",
       description:
         "Invest in a sustainable future with our solar and climate finance solutions. From solar installations to green energy projects, we support your environmental goals while building financial stability.",
       icon: FiTrendingUp,
+    },
+    {
+      number: "04",
+      title: "Sparkwave Lyfestyle",
+      description:
+        "Enjoy the freedom to own what you love today and pay at your pace with our Buy Now, Pay Later solution. Sparkwave Lyfestyle makes premium products, services, and experiences more accessible through flexible installment plans—helping you manage your lifestyle with ease, confidence, and convenience.",
+      icon: FiShoppingBag,
     },
   ];
 
@@ -135,7 +143,7 @@ export default function AboutPage() {
               About <span className="text-secondary">Spark Wave</span>
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed mb-4">
-              Empowering People, Enabling Growth.
+              Financial Access for Every Dream
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
               We are more than just a financial services provider—we are
@@ -244,14 +252,14 @@ export default function AboutPage() {
         <div className="container mx-auto px-12 lg:px-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              The Spark Suite
+              The Sparkwave Suite
             </h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-              Empowering People, Enabling Growth
+              Financial Access for Every Dream
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-16">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-16">
             {advantages.map((advantage, index) => (
               <div key={index} className="flex flex-col gap-4 items-start">
                 <div className="w-16 h-16 bg-primary-200 text-primary rounded-full flex items-center justify-center text-xl font-semibold mb-6">
