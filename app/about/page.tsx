@@ -95,13 +95,18 @@ export default function AboutPage() {
     { src: "/img/brand/brand8.png", alt: "remita" },
     {
       src: "/img/brand/brand2.png",
-      alt: "Brand 2",
+      alt: "Coast Research Technology",
       href: "https://www.coastresearchtechnology.com.ng",
     },
     {
-      src: "/img/brand/brand2.png",
-      alt: "Brand 2",
-      href: "https://www.coastresearchtechnology.com.ng",
+      src: "/img/brand/Coast-System-&-Technologies.png",
+      alt: "Coast System & Technologies",
+      href: "https://www.coastsystemtechnologies.com.ng",
+    },
+    {
+      src: "/img/brand/coast-infrastructure.png",
+      alt: "Coast Infrastructure",
+      href: "https://www.coastinfrastructure.com.ng",
     },
   ];
 
@@ -264,7 +269,7 @@ export default function AboutPage() {
       {/* <section className="py-20 bg-white">
         <div className="text-center space-y-4">
           <h2 className="text-4xl font-bold text-gray-900">
-            Board of Directors
+            Board of Trustees & Leadership
           </h2>
           <p className="text-lg text-gray-600 max-w-5xl mx-auto">
             Get to know our board members
