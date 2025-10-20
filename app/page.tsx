@@ -721,7 +721,7 @@ export default function Home() {
                   color: "text-green-600",
                 },
                 {
-                  number: "3,000+",
+                  number: "1,000+",
                   label: "customers served",
                   color: "text-blue-600",
                 },
