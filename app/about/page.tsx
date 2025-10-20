@@ -259,7 +259,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16">
             {advantages.map((advantage, index) => (
               <div key={index} className="flex flex-col gap-4 items-start">
                 <div className="w-16 h-16 bg-primary-200 text-primary rounded-full flex items-center justify-center text-xl font-semibold mb-6">
