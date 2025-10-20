@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { AiFillBank } from "react-icons/ai";
 import {
   FiArrowRight,
   FiCheckCircle,
@@ -132,7 +133,7 @@ export default function Home() {
                 </h1>
                 <p className="text-xl text-gray-200">
                   Fast, secure, and transparent financing for civil servants,
-                  businesses, green energy projects, and lifestyle essentials.
+                  businesses, green energy projects, and lyfestyle essentials.
                 </p>
 
                 {/* Trust Badges */}
@@ -149,7 +150,11 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
                     <FiShield className="w-5 h-5 text-yellow-400" />
-                    <span className="text-sm font-medium">NDPR Secure</span>
+                    <span className="text-sm font-medium">NDPC Secure</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+                    <AiFillBank className="w-5 h-5 text-yellow-400" />
+                    <span className="text-sm font-medium">WEMA Bank</span>
                   </div>
                 </div>
 
@@ -657,7 +662,7 @@ export default function Home() {
                   icon: FiCheckCircle,
                   title: "Fully Compliant",
                   description:
-                    "FCCPC licensed, NDPR secure, aligned with CBN guidelines",
+                    "FCCPC licensed, NDPC secure, aligned with CBN guidelines",
                   color: "text-orange-500",
                   bgColor: "bg-orange-50",
                 },

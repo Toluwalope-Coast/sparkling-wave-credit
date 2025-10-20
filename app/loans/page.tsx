@@ -290,7 +290,7 @@ const page = () => {
                 icon: FiShield,
                 title: "Secure & Compliant",
                 description:
-                  "FCCPC & NDPR compliant with transparent processes",
+                  "FCCPC & NDPC compliant with transparent processes",
                 color: "text-green-500",
                 bgColor: "bg-green-50",
               },
@@ -412,7 +412,7 @@ const page = () => {
                 </div>
                 <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
                   <FiShield className="w-5 h-5 text-blue-400" />
-                  <span className="text-sm font-medium">NDPR Secure</span>
+                  <span className="text-sm font-medium">NDPC Secure</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
                   <FiZap className="w-5 h-5 text-yellow-400" />

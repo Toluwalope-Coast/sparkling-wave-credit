@@ -451,7 +451,7 @@ export default function SparkGreenPage() {
               </div>
               <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 hover:bg-white/30 transition-all duration-300">
                 <FiShield className="w-5 h-5 text-blue-400" />
-                <span className="text-sm font-medium">NDPR Secure</span>
+                <span className="text-sm font-medium">NDPC Secure</span>
               </div>
               <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 hover:bg-white/30 transition-all duration-300">
                 <FiSun className="w-5 h-5 text-yellow-400" />
@@ -960,7 +960,7 @@ export default function SparkGreenPage() {
                   className="flex justify-center items-center w-full"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  FCCPC & NDPR Compliant
+                  FCCPC & NDPC Compliant
                 </h3>
                 <p className="text-gray-600 text-sm">
                   Fully compliant with Nigerian financial regulations

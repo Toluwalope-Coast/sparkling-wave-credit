@@ -26,18 +26,18 @@ const Header: React.FC = () => {
       href: "#",
       submenu: [
         {
-          name: "Spark Credit - Civil Servant Loans (Remita Integrated)",
+          name: "Spark Wave Credit - Civil Servant Loans (Remita Integrated)",
           href: "/loans/spark-credit",
         },
         {
-          name: "Spark Green - Solar & Climate Finance",
+          name: "Spark Wave Green - Solar & Climate Finance",
           href: "/loans/spark-green",
         },
         {
-          name: "Spark Lyfestyle - Buy Now, Pay Later (BNPL)",
+          name: "Spark Wave Lyfestyle - Buy Now, Pay Later (BNPL)",
           href: "/loans/spark-lyfestyle",
         },
-        { name: "Spark SME - Business Loans", href: "/loans/spark-sme" },
+        { name: "Spark Wave SME - Business Loans", href: "/loans/spark-sme" },
       ],
     },
     // { name: "Analytics", href: "/analytics", submenu: [] },

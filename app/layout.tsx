@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title:
     "Spark Wave Credit | SME Loans, Civil Servant Loans, Solar Finance & BNPL Nigeria",
   description:
-    "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPR secure.",
+    "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPC secure.",
   keywords:
     "Spark Wave Credit, SME loans Nigeria, business loans Nigeria, civil servant loans Nigeria, Remita loans, salary-backed loans, solar financing Nigeria, climate finance Nigeria, BNPL Nigeria, buy now pay later Nigeria, pay-as-you-go loans, quick loans Nigeria, Spark SME, Spark Credit, Spark Green, Spark Lyfestyle",
   authors: [{ name: "Spark Wave Credit" }],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title:
       "Spark Wave Credit | SME Loans, Civil Servant Loans, Solar Finance & BNPL Nigeria",
     description:
-      "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPR secure.",
+      "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPC secure.",
     images: [
       {
         url: "/img/banner/banner.png",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title:
       "Spark Wave Credit | SME Loans, Civil Servant Loans, Solar Finance & BNPL Nigeria",
     description:
-      "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPR secure.",
+      "Spark Wave Credit offers fast, transparent financing in Nigeria — SME business loans, civil servant salary-backed loans (Remita), solar & climate finance, and buy now pay later (BNPL). Apply online or via USSD. FCCPC compliant and NDPC secure.",
     images: ["/img/banner/banner.png"],
   },
   robots: {

@@ -98,6 +98,11 @@ export default function AboutPage() {
       alt: "Brand 2",
       href: "https://www.coastresearchtechnology.com.ng",
     },
+    {
+      src: "/img/brand/brand2.png",
+      alt: "Brand 2",
+      href: "https://www.coastresearchtechnology.com.ng",
+    },
   ];
 
   return (
@@ -255,6 +260,18 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Board of Directors */}
+      {/* <section className="py-20 bg-white">
+        <div className="text-center space-y-4">
+          <h2 className="text-4xl font-bold text-gray-900">
+            Board of Directors
+          </h2>
+          <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+            Get to know our board members
+          </p>
+        </div>
+      </section> */}
+
       {/* FAQ Section */}
       <section className="bg-white">
         <div className="container pr-12">
@@ -376,27 +393,17 @@ export default function AboutPage() {
       </section>
 
       {/* Brands Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-12">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-            {brands.map((brand, index) => (
-              <div key={index} className="flex justify-center w-full">
-                {brand.href ? (
-                  <Link
-                    href={brand.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    <Image
-                      src={brand.src}
-                      alt={brand.alt}
-                      width={200}
-                      height={200}
-                      className="h-20 w-auto object-contain"
-                    />
-                  </Link>
-                ) : (
+      <section className="py-16 bg-white container mx-auto px-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mb-8">
+          {brands.map((brand, index) => (
+            <div key={index} className="flex justify-center w-full">
+              {brand.href ? (
+                <Link
+                  href={brand.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                >
                   <Image
                     src={brand.src}
                     alt={brand.alt}
@@ -404,11 +411,26 @@ export default function AboutPage() {
                     height={200}
                     className="h-20 w-auto object-contain"
                   />
-                )}
-              </div>
-            ))}
-          </div>
+                </Link>
+              ) : (
+                <Image
+                  src={brand.src}
+                  alt={brand.alt}
+                  width={200}
+                  height={200}
+                  className="h-20 w-auto object-contain"
+                />
+              )}
+            </div>
+          ))}
         </div>
+        <Image
+          src="/img/brand/ndpc-barcode.jpg"
+          alt="ndpc"
+          width={400}
+          height={400}
+          className="flex justify-center mx-auto"
+        />
       </section>
 
       {/* CTA Section */}
