@@ -785,11 +785,11 @@ export default function SparkCreditPage() {
       {/* Compliance & Trust Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               Compliance & Trust
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
                 <Image
                   src="/FCCPC.png"
@@ -840,6 +840,24 @@ export default function SparkCreditPage() {
                   </h3>
                   <p className="text-gray-600">
                     Trusted payroll integration for seamless salary verification
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col bg-white rounded-2xl p-8 shadow-lg">
+                <Image
+                  src="/img/brand/wema-bank.png"
+                  alt="wema bank logo"
+                  width={200}
+                  height={200}
+                  className="flex justify-center items-center w-full"
+                />
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    Partnered with WEMA Bank
+                  </h3>
+                  <p className="text-gray-600">
+                    Enjoy secure and efficient loan disbursements powered by
+                    WEMA Bank’s trusted financial network.
                   </p>
                 </div>
               </div>
