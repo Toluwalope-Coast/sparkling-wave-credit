@@ -167,19 +167,19 @@ export default function AboutPage() {
         "Finance and risk management expert dedicated to governance, youth empowerment, and community development.",
       fullBio:
         "An experienced professional with degrees in Accounting and Computer Studies, Abidoye serves as MD of Lufemtoy Nig. Ltd. He contributes expertise in finance, risk management, and business development, and is committed to governance, community development, and youth empowerment.",
-      image: "/trustees/abidoye.png",
+      image: "/trustees/alabi.jpg",
       group: "trustee",
     },
-    {
-      name: "Toluwalope Rodney Coast",
-      title: "Chief Technologist",
-      shortBio:
-        "Leads digital transformation and innovation, advancing Sparkling Wave’s mission through technology.",
-      fullBio:
-        "Toluwalope is a technology leader with a degree in Computer Science and strong experience in research, development, and project management. At Sparkling Wave, he drives digital transformation, innovation, and business growth, while championing STEM education and digital literacy in the community.",
-      image: "/trustees/toluwalope.png",
-      group: "executive",
-    },
+    // {
+    //   name: "Toluwalope Rodney Coast",
+    //   title: "Chief Technologist",
+    //   shortBio:
+    //     "Leads digital transformation and innovation, advancing Sparkling Wave’s mission through technology.",
+    //   fullBio:
+    //     "Toluwalope is a technology leader with a degree in Computer Science and strong experience in research, development, and project management. At Sparkling Wave, he drives digital transformation, innovation, and business growth, while championing STEM education and digital literacy in the community.",
+    //   image: "/trustees/toluwalope.png",
+    //   group: "executive",
+    // },
     {
       name: "Onyemaechi Nike Deborah",
       title: "Board of Trustee Member",
@@ -197,7 +197,7 @@ export default function AboutPage() {
         "Marketing and sales expert providing strategic insight for business development and customer engagement.",
       fullBio:
         "With 19 years of experience in marketing and sales, Douglas has served as Marketing Manager at I-Bless Ltd Media and as Sales Representative at Right Auto Sales Ltd and Lemar Auto Ltd. He provides strategic insight in marketing, business development, and customer engagement as an Advisor to Sparkling Wave.",
-      image: "/trustees/douglas.png",
+      image: "/trustees/douglas.jpg",
       group: "advisor",
     },
   ];
@@ -373,10 +373,10 @@ export default function AboutPage() {
           {trustees.map((t) => (
             <div
               key={t.name}
-              className="bg-gray-50 rounded-2xl shadow-md overflow-hidden flex flex-col text-center hover:shadow-lg transition-shadow"
+              className="rounded-xl overflow-hidden flex flex-col text-center hover:shadow-lg transition-shadow"
             >
               {/* Full-width image */}
-              <div className="relative w-full h-56">
+              <div className="relative w-[220px] h-56 mx-auto">
                 <Image
                   src={t.image}
                   alt={t.name}
@@ -636,7 +636,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-r from-primary-900 to-primary-700 text-white overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-right from-primary-900 to-primary-700 text-white overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
