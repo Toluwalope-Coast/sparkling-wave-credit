@@ -171,16 +171,6 @@ export default function AboutPage() {
       group: "trustee",
     },
     {
-      name: "Onyemaechi Nike Deborah",
-      title: "Board of Trustee Member",
-      shortBio:
-        "Healthcare expert advocating for women’s wellness and community outreach through Sparkling Wave initiatives.",
-      fullBio:
-        "Onyemaechi is a healthcare professional with expertise in nursing, midwifery, and reproductive health. Holding a BNSc degree with RN and RM certifications, she contributes to Sparkling Wave’s health initiatives and advocates for women’s wellness, patient-centered care, and community outreach.",
-      image: "/trustees/nike.png",
-      group: "trustee",
-    },
-    {
       name: "Toluwalope Rodney Coast",
       title: "Chief Technologist",
       shortBio:
@@ -189,6 +179,16 @@ export default function AboutPage() {
         "Toluwalope is a technology leader with a degree in Computer Science and strong experience in research, development, and project management. At Sparkling Wave, he drives digital transformation, innovation, and business growth, while championing STEM education and digital literacy in the community.",
       image: "/trustees/toluwalope.png",
       group: "executive",
+    },
+    {
+      name: "Onyemaechi Nike Deborah",
+      title: "Board of Trustee Member",
+      shortBio:
+        "Healthcare expert advocating for women’s wellness and community outreach through Sparkling Wave initiatives.",
+      fullBio:
+        "Onyemaechi is a healthcare professional with expertise in nursing, midwifery, and reproductive health. Holding a BNSc degree with RN and RM certifications, she contributes to Sparkling Wave’s health initiatives and advocates for women’s wellness, patient-centered care, and community outreach.",
+      image: "/trustees/nike.png",
+      group: "trustee",
     },
     {
       name: "Douglas Egharevba",
@@ -369,26 +369,29 @@ export default function AboutPage() {
         </div>
 
         {/* Top Row: Chairperson + CEO */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-          {trustees
-            .filter((t) => t.group === "leadership")
-            .map((t) => (
-              <div
-                key={t.name}
-                className="bg-gray-50 rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
-              >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+          {trustees.map((t) => (
+            <div
+              key={t.name}
+              className="bg-gray-50 rounded-2xl shadow-md overflow-hidden flex flex-col text-center hover:shadow-lg transition-shadow"
+            >
+              {/* Full-width image */}
+              <div className="relative w-full h-56">
                 <Image
                   src={t.image}
                   alt={t.name}
-                  width={150}
-                  height={150}
-                  className="rounded-lg mb-4 object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover rounded-t-2xl object-top"
                 />
+              </div>
+
+              {/* Content section */}
+              <div className="p-6 flex flex-col items-center">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {t.name}
                 </h3>
                 <p className="text-sm text-indigo-600 mb-4">{t.title}</p>
-                {/* <p className="text-gray-600 text-sm mb-4">{t.shortBio}</p> */}
                 <button
                   onClick={() => setSelected(t as Trustee)}
                   className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
@@ -396,60 +399,56 @@ export default function AboutPage() {
                   Read Bio
                 </button>
               </div>
-            ))}
-        </div>
-
-        {/* Second Row: Other Members */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {trustees
-            .filter((t) => t.group !== "leadership")
-            .map((t) => (
-              <div
-                key={t.name}
-                className="bg-gray-50 rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
-              >
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  width={130}
-                  height={130}
-                  className="rounded-lg mb-4 object-cover"
-                />
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {t.name}
-                </h3>
-                <p className="text-sm text-indigo-600 mb-2">{t.title}</p>
-                <p className="text-gray-600 text-sm mb-4">{t.shortBio}</p>
-                <button
-                  onClick={() => setSelected(t as Trustee)}
-                  className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
-                >
-                  Read Bio
-                </button>
-              </div>
-            ))}
+            </div>
+          ))}
         </div>
 
         {/* Animated Modal */}
         <AnimatePresence>
           {selected && (
             <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
-              <DialogContent className="max-w-lg bg-transparent border-none shadow-none">
+              <DialogContent className="max-w-3xl bg-transparent border-none shadow-none">
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
+                  initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.25, ease: "easeOut" }}
-                  className="bg-white rounded-2xl p-6 shadow-xl"
+                  className="bg-white rounded-2xl p-6 shadow-xl flex flex-col md:flex-row items-center md:items-start gap-6"
                 >
-                  <DialogHeader>
-                    <DialogTitle>{selected.name}</DialogTitle>
-                    <DialogDescription className="text-indigo-600">
-                      {selected.title}
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="mt-4 text-gray-700 leading-relaxed text-sm">
-                    {selected.fullBio}
+                  {/* Left side image */}
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={selected.image}
+                      alt={selected.name}
+                      width={180}
+                      height={250}
+                      className="rounded-lg object-cover w-[180px] h-[250px]"
+                    />
+                  </div>
+
+                  {/* Right side content */}
+                  <div className="flex-1">
+                    <DialogHeader className="text-left">
+                      <DialogTitle className="text-xl font-semibold text-gray-900">
+                        {selected.name}
+                      </DialogTitle>
+                      <DialogDescription className="text-indigo-600 font-medium">
+                        {selected.title}
+                      </DialogDescription>
+                    </DialogHeader>
+
+                    <div className="mt-3 text-gray-700 leading-relaxed text-sm">
+                      {selected.fullBio}
+                    </div>
+
+                    <div className="mt-5 flex justify-end">
+                      <button
+                        onClick={() => setSelected(null)}
+                        className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </motion.div>
               </DialogContent>

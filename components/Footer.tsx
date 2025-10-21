@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                 className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Spark Credit
+                Sparkwave Credit
               </Link>
             </li>
             <li>
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                 className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Spark Green
+                Sparkwave Green
               </Link>
             </li>
             <li>
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
                 className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Spark Lyfestyle
+                Sparkwave Lyfestyle
               </Link>
             </li>
             <li>
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
                 className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Spark SME
+                Sparkwave SME
               </Link>
             </li>
           </ul>
