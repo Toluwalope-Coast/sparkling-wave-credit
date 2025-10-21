@@ -147,7 +147,7 @@ export default function AboutPage() {
         "Over 16 years of experience in banking and leadership, guiding Sparkling Wave with integrity and vision.",
       fullBio:
         "Emmanuel brings over 16 years of experience in banking, financial management, and fleet operations, having worked with Afribank Nigeria Plc and F.C. Junior Nigeria Ltd. Currently serving as Senior Pastor of The Fullness of God Ministries, he combines strong leadership and governance skills to guide Sparkling Wave Investment Company Limited as Chairperson of the Board.",
-      image: "/trustees/emmanuel.jpg",
+      image: "/trustees/emmanuel.png",
       group: "leadership",
     },
     {
@@ -157,7 +157,7 @@ export default function AboutPage() {
         "A visionary leader with strong business and financial expertise, driving strategic growth at Sparkling Wave.",
       fullBio:
         "Christopher is a visionary leader with a background in local government and business management. Twice recognized as Best Staff at LAPO Group, he now drives Sparkling Wave Investment Company with expertise in operations, financial planning, and strategic growth, focusing on talent development and customer success.",
-      image: "/trustees/christopher.jpg",
+      image: "/trustees/christopher.png",
       group: "leadership",
     },
     {
@@ -167,7 +167,7 @@ export default function AboutPage() {
         "Finance and risk management expert dedicated to governance, youth empowerment, and community development.",
       fullBio:
         "An experienced professional with degrees in Accounting and Computer Studies, Abidoye serves as MD of Lufemtoy Nig. Ltd. He contributes expertise in finance, risk management, and business development, and is committed to governance, community development, and youth empowerment.",
-      image: "/trustees/abidoye.jpg",
+      image: "/trustees/abidoye.png",
       group: "trustee",
     },
     {
@@ -177,7 +177,7 @@ export default function AboutPage() {
         "Healthcare expert advocating for women’s wellness and community outreach through Sparkling Wave initiatives.",
       fullBio:
         "Onyemaechi is a healthcare professional with expertise in nursing, midwifery, and reproductive health. Holding a BNSc degree with RN and RM certifications, she contributes to Sparkling Wave’s health initiatives and advocates for women’s wellness, patient-centered care, and community outreach.",
-      image: "/trustees/nike.jpg",
+      image: "/trustees/nike.png",
       group: "trustee",
     },
     {
@@ -187,7 +187,7 @@ export default function AboutPage() {
         "Leads digital transformation and innovation, advancing Sparkling Wave’s mission through technology.",
       fullBio:
         "Toluwalope is a technology leader with a degree in Computer Science and strong experience in research, development, and project management. At Sparkling Wave, he drives digital transformation, innovation, and business growth, while championing STEM education and digital literacy in the community.",
-      image: "/trustees/toluwalope.jpg",
+      image: "/trustees/toluwalope.png",
       group: "executive",
     },
     {
@@ -197,7 +197,7 @@ export default function AboutPage() {
         "Marketing and sales expert providing strategic insight for business development and customer engagement.",
       fullBio:
         "With 19 years of experience in marketing and sales, Douglas has served as Marketing Manager at I-Bless Ltd Media and as Sales Representative at Right Auto Sales Ltd and Lemar Auto Ltd. He provides strategic insight in marketing, business development, and customer engagement as an Advisor to Sparkling Wave.",
-      image: "/trustees/douglas.jpg",
+      image: "/trustees/douglas.png",
       group: "advisor",
     },
   ];
@@ -382,7 +382,7 @@ export default function AboutPage() {
                   alt={t.name}
                   width={150}
                   height={150}
-                  className="rounded-full mb-4 object-cover"
+                  className="rounded-lg mb-4 object-cover"
                 />
                 <h3 className="text-xl font-semibold text-gray-900">
                   {t.name}
@@ -413,7 +413,7 @@ export default function AboutPage() {
                   alt={t.name}
                   width={130}
                   height={130}
-                  className="rounded-full mb-4 object-cover"
+                  className="rounded-lg mb-4 object-cover"
                 />
                 <h3 className="text-lg font-semibold text-gray-900">
                   {t.name}

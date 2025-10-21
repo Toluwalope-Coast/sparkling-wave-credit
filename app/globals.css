@@ -11,7 +11,7 @@
 :root {
 
   /* Custom Brand Colors */
-  --primary: oklch(0.205 0 0);
+  --primary: #500480;
   --primary-50: #f5f3ff;
   --primary-100: #ede9fe;
   --primary-200: #ddd6fe;
