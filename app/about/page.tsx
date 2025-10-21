@@ -247,7 +247,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-bottom-right from-primary-50 to-primary-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary-800 mb-4 flex items-center gap-3">
                 <FiTrendingUp className="w-8 h-8" />
                 Our Mission
@@ -259,7 +259,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-bottom-right from-secondary-50 to-secondary-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <h3 className="text-2xl font-bold text-secondary-800 mb-4 flex items-center gap-3">
                 <FiBriefcase className="w-8 h-8" />
                 Our Vision
@@ -310,7 +310,7 @@ export default function AboutPage() {
                   "Seamless Remita Integration for Civil Servants",
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <FiCheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                    <FiCheckCircle className="w-6 h-6 text-green-500 shrink-0" />
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -416,7 +416,7 @@ export default function AboutPage() {
                   className="bg-white rounded-2xl p-6 shadow-xl flex flex-col md:flex-row items-center md:items-start gap-6"
                 >
                   {/* Left side image */}
-                  <div className="flex-shrink-0">
+                  <div className="shrink-0">
                     <Image
                       src={selected.image}
                       alt={selected.name}
@@ -463,7 +463,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Left Side - Purple Block with Photo */}
             <div className="relative">
-              <div className="bg-gradient-to-b from-primary-600 to-primary-800 rounded-2xl h-full min-h-[700px] relative overflow-hidden">
+              <div className="bg-gradient-to-bottom from-primary-600 to-primary-800 rounded-2xl h-full min-h-[700px] relative overflow-hidden">
                 {/* Photo overlapping the purple block */}
                 <div className="absolute z-20">
                   <Image
@@ -590,10 +590,7 @@ export default function AboutPage() {
             }}
           >
             {repeatedBrands.map((brand, index) => (
-              <div
-                key={index}
-                className="flex justify-center flex-shrink-0 w-40"
-              >
+              <div key={index} className="flex justify-center shrink-0 w-40">
                 {brand.href ? (
                   <Link
                     href={brand.href}
