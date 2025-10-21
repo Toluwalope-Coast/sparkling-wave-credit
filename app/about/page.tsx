@@ -12,10 +12,27 @@ import {
   FiDollarSign,
   FiShoppingBag,
 } from "react-icons/fi";
-import { motion } from "framer-motion";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { motion, AnimatePresence } from "framer-motion";
+
+interface Trustee {
+  name: string;
+  title: string;
+  shortBio: string;
+  fullBio: string;
+  image: string;
+  group: "leadership" | "trustee" | "executive" | "advisor";
+}
 
 export default function AboutPage() {
   const [openFAQ, setOpenFAQ] = useState(0);
+  const [selected, setSelected] = useState<Trustee | null>(null);
 
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? -1 : index);
@@ -121,6 +138,69 @@ export default function AboutPage() {
   ];
 
   const repeatedBrands = [...brands, ...brands];
+
+  const trustees = [
+    {
+      name: "Pastor Emmanuel Egbune",
+      title: "Chairperson, Board of Trustees",
+      shortBio:
+        "Over 16 years of experience in banking and leadership, guiding Sparkling Wave with integrity and vision.",
+      fullBio:
+        "Emmanuel brings over 16 years of experience in banking, financial management, and fleet operations, having worked with Afribank Nigeria Plc and F.C. Junior Nigeria Ltd. Currently serving as Senior Pastor of The Fullness of God Ministries, he combines strong leadership and governance skills to guide Sparkling Wave Investment Company Limited as Chairperson of the Board.",
+      image: "/trustees/emmanuel.jpg",
+      group: "leadership",
+    },
+    {
+      name: "Christopher Onyemaechi Emewo",
+      title: "Managing Director / CEO",
+      shortBio:
+        "A visionary leader with strong business and financial expertise, driving strategic growth at Sparkling Wave.",
+      fullBio:
+        "Christopher is a visionary leader with a background in local government and business management. Twice recognized as Best Staff at LAPO Group, he now drives Sparkling Wave Investment Company with expertise in operations, financial planning, and strategic growth, focusing on talent development and customer success.",
+      image: "/trustees/christopher.jpg",
+      group: "leadership",
+    },
+    {
+      name: "Abidoye Olufemi Alabi",
+      title: "Board of Trustee Member",
+      shortBio:
+        "Finance and risk management expert dedicated to governance, youth empowerment, and community development.",
+      fullBio:
+        "An experienced professional with degrees in Accounting and Computer Studies, Abidoye serves as MD of Lufemtoy Nig. Ltd. He contributes expertise in finance, risk management, and business development, and is committed to governance, community development, and youth empowerment.",
+      image: "/trustees/abidoye.jpg",
+      group: "trustee",
+    },
+    {
+      name: "Onyemaechi Nike Deborah",
+      title: "Board of Trustee Member",
+      shortBio:
+        "Healthcare expert advocating for women’s wellness and community outreach through Sparkling Wave initiatives.",
+      fullBio:
+        "Onyemaechi is a healthcare professional with expertise in nursing, midwifery, and reproductive health. Holding a BNSc degree with RN and RM certifications, she contributes to Sparkling Wave’s health initiatives and advocates for women’s wellness, patient-centered care, and community outreach.",
+      image: "/trustees/nike.jpg",
+      group: "trustee",
+    },
+    {
+      name: "Toluwalope Rodney Coast",
+      title: "Chief Technologist",
+      shortBio:
+        "Leads digital transformation and innovation, advancing Sparkling Wave’s mission through technology.",
+      fullBio:
+        "Toluwalope is a technology leader with a degree in Computer Science and strong experience in research, development, and project management. At Sparkling Wave, he drives digital transformation, innovation, and business growth, while championing STEM education and digital literacy in the community.",
+      image: "/trustees/toluwalope.jpg",
+      group: "executive",
+    },
+    {
+      name: "Douglas Egharevba",
+      title: "Advisor",
+      shortBio:
+        "Marketing and sales expert providing strategic insight for business development and customer engagement.",
+      fullBio:
+        "With 19 years of experience in marketing and sales, Douglas has served as Marketing Manager at I-Bless Ltd Media and as Sales Representative at Right Auto Sales Ltd and Lemar Auto Ltd. He provides strategic insight in marketing, business development, and customer engagement as an Advisor to Sparkling Wave.",
+      image: "/trustees/douglas.jpg",
+      group: "advisor",
+    },
+  ];
 
   return (
     <main className="min-h-screen">
@@ -278,16 +358,105 @@ export default function AboutPage() {
       </section>
 
       {/* Board of Directors */}
-      {/* <section className="py-20 bg-white">
-        <div className="text-center space-y-4">
+      <section className="py-20 bg-white">
+        <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl font-bold text-gray-900">
             Board of Trustees & Leadership
           </h2>
-          <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Get to know our board members
           </p>
         </div>
-      </section> */}
+
+        {/* Top Row: Chairperson + CEO */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+          {trustees
+            .filter((t) => t.group === "leadership")
+            .map((t) => (
+              <div
+                key={t.name}
+                className="bg-gray-50 rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              >
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={150}
+                  height={150}
+                  className="rounded-full mb-4 object-cover"
+                />
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {t.name}
+                </h3>
+                <p className="text-sm text-indigo-600 mb-4">{t.title}</p>
+                {/* <p className="text-gray-600 text-sm mb-4">{t.shortBio}</p> */}
+                <button
+                  onClick={() => setSelected(t as Trustee)}
+                  className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                >
+                  Read Bio
+                </button>
+              </div>
+            ))}
+        </div>
+
+        {/* Second Row: Other Members */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {trustees
+            .filter((t) => t.group !== "leadership")
+            .map((t) => (
+              <div
+                key={t.name}
+                className="bg-gray-50 rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              >
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={130}
+                  height={130}
+                  className="rounded-full mb-4 object-cover"
+                />
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {t.name}
+                </h3>
+                <p className="text-sm text-indigo-600 mb-2">{t.title}</p>
+                <p className="text-gray-600 text-sm mb-4">{t.shortBio}</p>
+                <button
+                  onClick={() => setSelected(t as Trustee)}
+                  className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                >
+                  Read Bio
+                </button>
+              </div>
+            ))}
+        </div>
+
+        {/* Animated Modal */}
+        <AnimatePresence>
+          {selected && (
+            <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
+              <DialogContent className="max-w-lg bg-transparent border-none shadow-none">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.25, ease: "easeOut" }}
+                  className="bg-white rounded-2xl p-6 shadow-xl"
+                >
+                  <DialogHeader>
+                    <DialogTitle>{selected.name}</DialogTitle>
+                    <DialogDescription className="text-indigo-600">
+                      {selected.title}
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="mt-4 text-gray-700 leading-relaxed text-sm">
+                    {selected.fullBio}
+                  </div>
+                </motion.div>
+              </DialogContent>
+            </Dialog>
+          )}
+        </AnimatePresence>
+      </section>
 
       {/* FAQ Section */}
       <section className="bg-white">
