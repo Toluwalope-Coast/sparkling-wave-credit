@@ -28,6 +28,7 @@ interface Trustee {
   fullBio: string;
   image: string;
   group: "leadership" | "trustee" | "executive" | "advisor";
+  linkedIn: string;
 }
 
 export default function AboutPage() {
@@ -192,7 +193,7 @@ export default function AboutPage() {
     },
     {
       name: "Douglas Egharevba",
-      title: "Advisor",
+      title: "Advisor - Board of Trustee Member",
       shortBio:
         "Marketing and sales expert providing strategic insight for business development and customer engagement.",
       fullBio:
