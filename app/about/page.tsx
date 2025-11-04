@@ -162,6 +162,49 @@ export default function AboutPage() {
       group: "leadership",
     },
     {
+      name: "Onyemaechi Nike Deborah",
+      title: "Board of Trustee Member",
+      shortBio:
+        "Healthcare expert advocating for women’s wellness and community outreach through Sparkling Wave initiatives.",
+      fullBio:
+        "Onyemaechi is a healthcare professional with expertise in nursing, midwifery, and reproductive health. Holding a BNSc degree with RN and RM certifications, she contributes to Sparkling Wave’s health initiatives and advocates for women’s wellness, patient-centered care, and community outreach.",
+      image: "/trustees/nike.png",
+      group: "trustee",
+    },
+    {
+      name: "Douglas Egharevba",
+      title: "Advisor - Board of Trustee Member",
+      shortBio:
+        "Marketing and sales expert providing strategic insight for business development and customer engagement.",
+      fullBio:
+        "With 19 years of experience in marketing and sales, Douglas has served as Marketing Manager at I-Bless Ltd Media and as Sales Representative at Right Auto Sales Ltd and Lemar Auto Ltd. He provides strategic insight in marketing, business development, and customer engagement as an Advisor to Sparkling Wave.",
+      image: "/trustees/douglas.jpg",
+      group: "advisor",
+    },
+  ];
+
+  const team = [
+    {
+      name: "Rodney Toluwalope",
+      title: "Chairperson, Board of Trustees",
+      shortBio:
+        "Over 16 years of experience in banking and leadership, guiding Sparkling Wave with integrity and vision.",
+      fullBio:
+        "Emmanuel brings over 16 years of experience in banking, financial management, and fleet operations, having worked with Afribank Nigeria Plc and F.C. Junior Nigeria Ltd. Currently serving as Senior Pastor of The Fullness of God Ministries, he combines strong leadership and governance skills to guide Sparkling Wave Investment Company Limited as Chairperson of the Board.",
+      image: "/trustees/emmanuel.png",
+      group: "leadership",
+    },
+    {
+      name: "Christopher Onyemaechi Emewo",
+      title: "Managing Director / CEO",
+      shortBio:
+        "A visionary leader with strong business and financial expertise, driving strategic growth at Sparkling Wave.",
+      fullBio:
+        "Christopher is a visionary leader with a background in local government and business management. Twice recognized as Best Staff at LAPO Group, he now drives Sparkling Wave Investment Company with expertise in operations, financial planning, and strategic growth, focusing on talent development and customer success.",
+      image: "/trustees/christopher.png",
+      group: "leadership",
+    },
+    {
       name: "Abidoye Olufemi Alabi",
       title: "Board of Trustee Member",
       shortBio:
@@ -318,7 +361,7 @@ export default function AboutPage() {
               </div>
 
               <Link
-                href="/apply"
+                href="#"
                 className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-600 transition-colors duration-300"
               >
                 Apply for Loan
@@ -370,7 +413,7 @@ export default function AboutPage() {
         </div>
 
         {/* Top Row: Chairperson + CEO */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
           {trustees.map((t) => (
             <div
               key={t.name}
@@ -659,7 +702,7 @@ export default function AboutPage() {
             </div>
             <div className="text-center lg:text-right">
               <Link
-                href="/apply"
+                href="#"
                 className="inline-block bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 text-lg"
               >
                 Apply Now
