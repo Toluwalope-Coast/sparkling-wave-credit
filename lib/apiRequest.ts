@@ -46,3 +46,83 @@ export const getAllApiRequest = async (endpoint: string, token?: string) => {
     throw error;
   }
 };
+
+/**
+ * Asynchronously fetches a single item from a specified API endpoint.
+ * Similar to getAllApiRequest but semantically for single item retrieval.
+ *
+ * @param {string} endpoint - The API endpoint to fetch data from.
+ * @param {string} token - Optional Bearer token for authorization.
+ * @returns {Promise<Object>} - A promise that resolves to the fetched data.
+ * @throws {Error} - Throws an error if the fetch operation fails.
+ */
+export const getSingleApiRequest = async (endpoint: string, token?: string) => {
+  try {
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+    };
+
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
+
+    const fullUrl = `${BASE_URL}${endpoint}`;
+
+    const response = await fetch(fullUrl, {
+      method: "GET",
+      headers,
+    });
+    if (!response.ok) {
+      const errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+      throw new Error(
+        `Failed to fetch data from ${endpoint} - ${errorMessage}`
+      );
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+/**
+ * Asynchronously sends a POST request to a specified API endpoint.
+ *
+ * @param {string} endpoint - The API endpoint to send the request to.
+ * @param {Object} body - The request body data to send.
+ * @param {Record<string, string>} headers - Optional additional headers (e.g., Authorization).
+ * @returns {Promise<Object>} - A promise that resolves to the response data.
+ * @throws {Error} - Throws an error if the request fails.
+ */
+export const postApiRequest = async (
+  endpoint: string,
+  body: Record<string, any>,
+  headers?: Record<string, string>
+) => {
+  try {
+    const requestHeaders: Record<string, string> = {
+      "Content-Type": "application/json",
+      ...headers,
+    };
+
+    const fullUrl = `${BASE_URL}${endpoint}`;
+
+    const response = await fetch(fullUrl, {
+      method: "POST",
+      headers: requestHeaders,
+      body: JSON.stringify(body),
+    });
+
+    if (!response.ok) {
+      const errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+      throw new Error(
+        `Failed to post data to ${endpoint} - ${errorMessage}`
+      );
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};

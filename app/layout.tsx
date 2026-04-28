@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InternetCheck from "@/utils/InternetChecker";
+import BackToTopButton from "@/components/BackToTop";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -184,6 +185,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <div className="min-h-screen flex flex-col">
           <InternetCheck />
+          <BackToTopButton />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

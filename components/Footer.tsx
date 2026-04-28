@@ -11,7 +11,7 @@ import {
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 
 const Footer: React.FC = () => {

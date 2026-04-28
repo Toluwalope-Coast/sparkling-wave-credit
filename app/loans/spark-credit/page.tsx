@@ -323,7 +323,7 @@ export default function SparkCreditPage() {
       number: "01",
       title: "Apply",
       description:
-        "Dial USSD, visit website, or use our app to start your application.",
+        `No Smartphone needed, works on any phone. Dial *347*855# or visit our website to start your application.`,
       icon: FiSmartphone,
     },
     {
@@ -355,7 +355,7 @@ export default function SparkCreditPage() {
 
   const faqData = [
     {
-      question: "Who can apply for Spark Credit?",
+      question: "Who can apply for SparkWave Credit?",
       answer:
         "Any Nigerian civil servant with salary collection through Remita.",
     },
@@ -386,7 +386,7 @@ export default function SparkCreditPage() {
       name: "Chinwe Okafor",
       role: "Civil Servant",
       content:
-        "Getting my Spark Credit loan was stress-free. Salary verification was instant and repayment is automatic.",
+        "Getting my SparkWave Credit loan was stress-free. Salary verification was instant and repayment is automatic.",
       avatar: "/img/testmonial/Chinwe.jpg",
     },
     {
@@ -402,9 +402,8 @@ export default function SparkCreditPage() {
     <main className="min-h-screen">
       {/* Sticky Apply Button */}
       <div
-        className={`fixed top-4 right-4 z-50 transition-all duration-300 ${
-          isSticky ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-        }`}
+        className={`fixed top-4 right-4 z-50 transition-all duration-300 ${isSticky ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+          }`}
       >
         <Link
           href="#apply"
@@ -461,7 +460,7 @@ export default function SparkCreditPage() {
                 href="#apply"
                 className="bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 text-lg hover:transform hover:-translate-y-1 hover:shadow-lg"
               >
-                Apply for Spark Credit
+                Apply for SparkWave Credit
               </Link>
               <Link
                 href="#calculator"
@@ -519,12 +518,12 @@ export default function SparkCreditPage() {
                 </h2>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">
                   Civil servants across Nigeria deserve easy access to credit
-                  without stress. Spark Credit is built just for you —
+                  without stress. SparkWave Credit is built just for you —
                   leveraging Remita payroll integration to make borrowing
                   simple, secure, and automated.
                 </p>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                  With Spark Credit, loan approval and repayment are tied
+                  With SparkWave Credit, loan approval and repayment are tied
                   directly to your salary, eliminating delays and making the
                   process transparent from start to finish.
                 </p>
@@ -533,7 +532,7 @@ export default function SparkCreditPage() {
                 <div className="relative w-full h-64 sm:h-80 lg:h-96">
                   <Image
                     src="/civil-servant.jpg"
-                    alt="Spark Credit Overview"
+                    alt="SparkWave Credit Overview"
                     fill
                     className="object-cover rounded-2xl shadow-xl top-0"
                   />
@@ -556,7 +555,7 @@ export default function SparkCreditPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                Why Choose Spark Credit?
+                Why Choose SparkWave Credit?
               </h2>
               <p className="text-lg text-gray-600">
                 Key features that make us the preferred choice for civil
@@ -643,7 +642,7 @@ export default function SparkCreditPage() {
                 How It Works
               </h2>
               <p className="text-lg text-gray-600">
-                Simple steps to get your Spark Credit loan
+                Simple steps to get your SparkWave Credit loan
               </p>
             </div>
 
@@ -691,7 +690,7 @@ export default function SparkCreditPage() {
                 What Our Customers Say
               </h2>
               <p className="text-lg text-gray-600">
-                Real experiences from civil servants who trust Spark Credit
+                Real experiences from civil servants who trust SparkWave Credit
               </p>
             </div>
 
@@ -737,7 +736,7 @@ export default function SparkCreditPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-gray-600">
-                Get answers to common questions about Spark Credit
+                Get answers to common questions about SparkWave Credit
               </p>
             </div>
 
@@ -755,19 +754,17 @@ export default function SparkCreditPage() {
                       {item.question}
                     </h3>
                     <div
-                      className={`transition-transform duration-300 ${
-                        openFAQ === index ? "rotate-180" : "rotate-0"
-                      }`}
+                      className={`transition-transform duration-300 ${openFAQ === index ? "rotate-180" : "rotate-0"
+                        }`}
                     >
                       <FiChevronDown className="text-primary text-2xl" />
                     </div>
                   </div>
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      openFAQ === index
-                        ? "max-h-96 opacity-100"
-                        : "max-h-0 opacity-0"
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ${openFAQ === index
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                      }`}
                   >
                     <div className="px-6 pb-6">
                       <p className="text-gray-600 leading-relaxed">
@@ -889,7 +886,7 @@ export default function SparkCreditPage() {
                 Civil Servants Deserve Stress-Free Credit
               </h2>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Apply now and access Spark Credit in just 24–48 hours. No
+                Apply now and access SparkWave Credit in just 24–48 hours. No
                 collateral, no stress, just simple credit when you need it.
               </p>
             </div>
@@ -899,7 +896,7 @@ export default function SparkCreditPage() {
                   href="/contact"
                   className="bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 text-lg"
                 >
-                  Apply for Spark Credit
+                  Apply for SparkWave Credit
                 </Link>
                 <Link
                   href="/contact"
