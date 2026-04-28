@@ -4,6 +4,8 @@ import Header from "./components/header";
 import PageWrapper from "./components/pagewrapper";
 import { BottomNav } from "@/components/BottomNav";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Dashboard | Sharpcredit Limited",
   description: "Loan Dashboard",

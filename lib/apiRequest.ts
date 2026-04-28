@@ -126,3 +126,48 @@ export const postApiRequest = async (
     throw error;
   }
 };
+
+/**
+ * Asynchronously sends a PATCH/PUT request to a specified API endpoint to update data.
+ *
+ * @param {string} endpoint - The API endpoint to send the request to.
+ * @param {string | undefined} token - The Bearer token for authorization.
+ * @param {Object} body - The request body data to send.
+ * @returns {Promise<Object>} - A promise that resolves to the response data.
+ * @throws {Error} - Throws an error if the request fails.
+ */
+export const updateApiRequest = async (
+  endpoint: string,
+  token: string | undefined,
+  body: Record<string, any>
+) => {
+  try {
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+    };
+
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
+
+    const fullUrl = `${BASE_URL}${endpoint}`;
+
+    const response = await fetch(fullUrl, {
+      method: "PATCH", // Using PATCH for partial updates like profile image/gender
+      headers,
+      body: JSON.stringify(body),
+    });
+
+    if (!response.ok) {
+      const errorMessage = `HTTP ${response.status}: ${response.statusText}`;
+      throw new Error(
+        `Failed to update data at ${endpoint} - ${errorMessage}`
+      );
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};

@@ -1,11 +1,11 @@
-import ResetPasswordPage from "@/app/(auth)/resetpassword";
+// import ResetPasswordPage from "@/app/(auth)/resetpassword";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import {
   CardTitle,
   CardDescription,
@@ -30,7 +30,7 @@ const SettingsPage: React.FC = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger>Reset Password</AccordionTrigger>
             <AccordionContent>
-              <ResetPasswordPage />
+              {/* <ResetPasswordPage /> */}
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2" className="border-b-0">

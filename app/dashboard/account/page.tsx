@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/card";
 import { ModeToggle } from "@/utils/modeToggler";
 import ProfilePage from "../profile/page";
-import ResetPasswordPage from "@/app/(auth)/resetpassword";
+// import ResetPasswordPage from "@/app/(auth)/resetpassword";
 import { Shield, Palette, Key, User, Settings } from "lucide-react";
 
 const AccountPage: React.FC = () => {
@@ -74,7 +74,7 @@ const AccountPage: React.FC = () => {
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-6">
                     <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-                      <ResetPasswordPage />
+                      {/* <ResetPasswordPage /> */}
                     </div>
                   </AccordionContent>
                 </AccordionItem>
