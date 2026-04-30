@@ -1,6 +1,6 @@
 // @/components/reusable/Security.tsx
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import {
   CardTitle,
   CardDescription,

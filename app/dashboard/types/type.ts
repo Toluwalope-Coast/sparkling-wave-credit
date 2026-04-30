@@ -1,10 +1,11 @@
 // @/dashboard/types/types.ts
+import type { ReactElement } from "react";
 
 export type SideNavItem = {
   id: string;
   title: string;
   path: string;
-  icon?: JSX.Element;
+  icon?: ReactElement;
   submenu?: boolean;
   subMenuItems?: SideNavItem[];
 };

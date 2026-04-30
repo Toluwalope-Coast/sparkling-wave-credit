@@ -13,7 +13,6 @@ import { toast } from "react-toastify";
 import { getTokenFromCookies } from "@/lib/cookies";
 import { formatDateTime } from "@/utils/dateTimeUtility";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
 import { DataTable } from "../components/ui/custom/data-table";
 import LoadingSpinner from "../components/LoadingSpinner";
 

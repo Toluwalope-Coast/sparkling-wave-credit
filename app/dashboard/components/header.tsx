@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { BsList } from "react-icons/bs";
 import { UserNav } from "./usernav";
-import { ThemeSwitcher } from "../../../utils/theme-switcher";
 import { useSideBarToggle } from "../hooks/use-sidebar-toggle";
 import { ModeToggle } from "@/utils/modeToggler";
 import { getSingleApiRequest } from "@/lib/apiRequest";

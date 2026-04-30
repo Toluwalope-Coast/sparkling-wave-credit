@@ -1,11 +1,9 @@
 // @/dashboard/components/menu_constants.tsx
 
 import {
-  BsEnvelope,
   BsGear,
   BsHouseDoor,
   BsKanban,
-  BsListUl,
   BsQuestionCircle,
 } from "react-icons/bs";
 import { SideNavItemGroup } from "../types/type";

@@ -2,12 +2,12 @@
 
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { z } from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState, useEffect, useRef } from "react";
-import { getSingleApiRequest, updateApiRequest } from "@/lib/apiRequest";
+import { updateApiRequest } from "@/lib/apiRequest";
 import LoadingSpinner from "../components/LoadingSpinner";
 import Image from "next/image";
 import {
@@ -19,7 +19,6 @@ import { getTokenFromCookies } from "@/lib/cookies";
 import { Edit } from "lucide-react";
 import {
   getGenderUpdateFlagFromCookies,
-  saveGenderUpdateFlagToCookies,
 } from "@/lib/genderUpdate";
 import { toast } from "react-toastify";
 import { useAuth } from "../components/context/AuthContext";
@@ -32,20 +31,14 @@ const schema = z.object({
     .string()
     .length(11, { message: "Phone Number must be 11 digits" }),
   gender: z.string().nonempty({ message: "Gender is required" }),
+  profileImageUrl: z.string(),
+  accountName: z.string(),
+  accountNumber: z.string(),
+  bankName: z.string(),
+  remitaID: z.string(),
 });
 
-interface FormData {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phoneNumber: string;
-  gender: string;
-  profileImageUrl: string;
-  accountName: string;
-  accountNumber: string;
-  bankName: string;
-  remitaID: string;
-}
+type FormData = z.infer<typeof schema>;
 
 export default function ProfilePage() {
   const { userData, updateUserData } = useAuth();
@@ -90,7 +83,7 @@ export default function ProfilePage() {
   const onSubmit: SubmitHandler<FormData> = async (formData) => {
     setLoading(true); // Start loading
     try {
-      const token = getTokenFromCookies(); // Get auth token
+      const token = getTokenFromCookies() ?? undefined; // Get auth token
       const endpoint = "/api/borrowers/update-profile/"; // API endpoint for updating profile
 
       // Prepare data to submit
@@ -194,7 +187,7 @@ export default function ProfilePage() {
    * @returns {Promise<void>} Resolves when the profile update is successful.
    */
   const updateUserProfile = async (imageUrl: string): Promise<void> => {
-    const token = getTokenFromCookies(); // Retrieve the token from cookies
+    const token = getTokenFromCookies() ?? undefined; // Retrieve the token from cookies
     const endpoint = "/api/borrowers/update-profile/"; // API endpoint for updating profile
 
     const dataToSubmit = {

@@ -4,7 +4,7 @@ import {
   getDownloadURL,
   deleteObject,
 } from "firebase/storage";
-import { storage, STORAGE_PATHS, FILE_SIZE_LIMITS } from "./firebaseConfig";
+import { storage } from "./firebaseConfig";
 
 export interface UploadResult {
   success: boolean;

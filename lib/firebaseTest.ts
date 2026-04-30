@@ -1,4 +1,5 @@
 import { storage } from "./firebaseConfig";
+import { ref } from "firebase/storage";
 
 /**
  * Tests Firebase Storage connection
@@ -19,7 +20,7 @@ export const testFirebaseConnection = async (): Promise<{
     }
 
     // Try to create a reference (this will fail if Firebase is not properly configured)
-    const testRef = storage.ref("test-connection");
+    ref(storage, "test-connection");
 
     return {
       success: true,

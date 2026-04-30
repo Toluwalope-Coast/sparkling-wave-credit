@@ -8,7 +8,7 @@ import { SIDENAV_ITEMS } from "./menu_constants";
 import { X } from "lucide-react";
 import Link from "next/link";
 import { IoLogOutOutline } from "react-icons/io5";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useHandleLogout } from "@/lib/handleLogout";
 import LogoutModal from "./reusables/LogoutModal";
 

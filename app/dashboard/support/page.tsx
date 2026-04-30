@@ -3,7 +3,7 @@
 import React, { useState, useEffect, FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import emailjs from "emailjs-com";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/input";
 import { getSingleApiRequest } from "@/lib/apiRequest";
 
@@ -21,7 +21,7 @@ const SupportPage: React.FC = () => {
         const { first_name, last_name, phone_number } = data;
         setName(`${first_name} ${last_name}`);
         setPhoneNumber(phone_number);
-      } catch (error) {
+      } catch {
         toast.error("Failed to load user data");
       }
     };
@@ -56,7 +56,7 @@ const SupportPage: React.FC = () => {
 
       // Send message to WhatsApp
       sendToWhatsApp();
-    } catch (error) {
+    } catch {
       toast.error("Failed to submit complaint. Please try again.");
     } finally {
       setLoading(false);

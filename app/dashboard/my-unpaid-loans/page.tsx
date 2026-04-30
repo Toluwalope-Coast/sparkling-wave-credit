@@ -46,19 +46,6 @@ const columns = [
   },
 ];
 
-const getBadgeVariant = (status: string) => {
-  switch (status.toLowerCase()) {
-    case "processing":
-      return "warning"; // Orange for processing
-    case "active":
-      return "success"; // Green for active
-    case "rejected":
-      return "danger"; // Red for rejected
-    default:
-      return "default"; // Default for other statuses
-  }
-};
-
 const LoanPage = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [loanData, setLoanData] = useState<any[]>([]);

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
 import { getSingleApiRequest } from "@/lib/apiRequest";
-import { deleteTokenFromCookies, getTokenFromCookies } from "@/lib/cookies";
+import { getTokenFromCookies } from "@/lib/cookies";
 import Link from "next/link";
 import ModalPortal from "@/components/ModalPortal";
 

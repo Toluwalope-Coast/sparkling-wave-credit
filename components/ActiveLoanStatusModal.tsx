@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import Modal from "@/components/TermsOfServiceModal";
 import { useRouter } from "next/navigation";
 

@@ -8,10 +8,8 @@ import { deleteTokenFromCookies, getTokenFromCookies } from "@/lib/cookies";
 import { useState } from "react";
 import GoBack from "./GoBack";
 import {
-  useParams,
   usePathname,
   useRouter,
-  useSearchParams,
 } from "next/navigation";
 
 interface TenureFormProps {

@@ -10,7 +10,7 @@ export const headerData: iHeaderData = {
   applyNowLink: "/login",
 };
 
-import { LucideIcon, Settings } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
 export interface ISidebarNavItem {
   title: string;

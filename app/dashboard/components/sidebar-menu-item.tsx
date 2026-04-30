@@ -56,7 +56,7 @@ export const SideBarMenuItem: React.FC<SideBarMenuItemProps> = ({ item }) => {
             className={`${dropdownMenuHeaderLink} ${
               pathname.includes(item.path) ? activeLink : ""
             }`}
-            onClick={(e) => {
+            onClick={() => {
               toggleSubMenu();
               handleNavigation();
             }}
