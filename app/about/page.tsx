@@ -218,7 +218,7 @@ export default function AboutPage() {
     {
       name: "Toluwalope Coast",
       title: "CTO",
-      image: "/trustees/coast.png",
+      image: "/trustees/toluwalope-coast.jpg",
       linkedin: "https://www.linkedin.com/in/toluwalope-coast-58882156/",
     },
     {

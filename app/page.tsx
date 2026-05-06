@@ -37,7 +37,7 @@ export default function Home() {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -502,13 +502,16 @@ export default function Home() {
                       Climate-friendly projects
                     </li>
                   </ul>
-                  <Link
+                  {/* <Link
                     href="/loans/spark-green"
                     className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors"
                   >
                     Learn More
                     <FiArrowRight className="w-4 h-4" />
-                  </Link>
+                  </Link> */}
+                  <div className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-lg font-semibold bg-gray-400 cursor-not-allowed">
+                    Coming Soon
+                  </div>
                 </div>
               </div>
 
@@ -554,13 +557,16 @@ export default function Home() {
                       Lifestyle essentials
                     </li>
                   </ul>
-                  <Link
+                  {/* <Link
                     href="/loans/spark-lyfestyle"
                     className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors"
                   >
                     Learn More
                     <FiArrowRight className="w-4 h-4" />
-                  </Link>
+                  </Link> */}
+                  <div className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-lg font-semibold bg-gray-400 cursor-not-allowed">
+                    Coming Soon
+                  </div>
                 </div>
               </div>
             </div>

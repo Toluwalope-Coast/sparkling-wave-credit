@@ -30,12 +30,14 @@ const Header: React.FC = () => {
           href: "/loans/spark-credit",
         },
         {
-          name: "Spark Wave Green - Solar & Climate Finance",
-          href: "/loans/spark-green",
+          name: "Spark Wave Green - Solar & Climate Finance [Coming Soon]",
+          // href: "/loans/spark-green",
+          href: "#",
         },
         {
-          name: "Spark Wave Lyfestyle - Buy Now, Pay Later (BNPL)",
-          href: "/loans/spark-lyfestyle",
+          name: "Spark Wave Lyfestyle - Buy Now, Pay Later (BNPL) [Coming Soon]",
+          // href: "/loans/spark-lyfestyle",
+          href: "#",
         },
         { name: "Spark Wave SME - Business Loans", href: "/loans/spark-sme" },
       ],

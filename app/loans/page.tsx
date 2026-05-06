@@ -198,13 +198,16 @@ const page = () => {
                     Long-term investment
                   </li>
                 </ul>
-                <Link
+                {/* <Link
                   href="/loans/spark-green"
                   className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 group-hover:transform group-hover:-translate-y-1"
                 >
                   Learn More
                   <FiArrowRight className="w-4 h-4" />
-                </Link>
+                </Link> */}
+                <div className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold">
+                  Coming Soon
+                </div>
               </div>
             </div>
 
@@ -250,13 +253,16 @@ const page = () => {
                     Fast approval
                   </li>
                 </ul>
-                <Link
+                {/* <Link
                   href="/loans/spark-lyfestyle"
                   className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all duration-300 group-hover:transform group-hover:-translate-y-1"
                 >
                   Learn More
                   <FiArrowRight className="w-4 h-4" />
-                </Link>
+                </Link> */}
+                <div className="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold">
+                  Coming Soon
+                </div>
               </div>
             </div>
           </div>
