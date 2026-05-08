@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title:
     "Spark Credit — Civil Servant Loans (Remita Integrated) | Spark Wave Credit",
   description:
-    "Spark Credit offers fast, salary-backed loans for Nigerian civil servants via Remita integration. No collateral, quick approval in 24–48h, transparent fees. Apply today with Spark Wave.",
+    "Spark Credit offers fast, salary-backed loans for Nigerian civil servants via Remita integration. No collateral, quick approval in 3 minutes, transparent fees. Apply today with Spark Wave.",
   keywords:
     "Spark Credit, civil servant loans Nigeria, Remita loans Nigeria, salary-backed loans, quick civil servant loan, Remita integration loan, government worker loans, Spark Wave Credit, fast loans for civil servants, payroll loans Nigeria",
   authors: [{ name: "Spark Wave Credit" }],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Spark Wave Credit",
     title: "Spark Credit — Civil Servant Loans (Remita Integrated)",
     description:
-      "Fast, salary-backed loans for Nigerian civil servants via Remita integration. No collateral, quick approval in 24–48h, transparent fees.",
+      "Fast, salary-backed loans for Nigerian civil servants via Remita integration. No collateral, quick approval in 3 minutes, transparent fees.",
     images: [
       {
         url: "https://www.sparkwavecredit.com/img/banner/spark-credit-og.jpg",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Spark Credit — Civil Servant Loans (Remita Integrated)",
     description:
-      "Fast, salary-backed loans for Nigerian civil servants via Remita integration. No collateral, quick approval in 24–48h.",
+      "Fast, salary-backed loans for Nigerian civil servants via Remita integration. No collateral, quick approval in 3 minutes.",
     images: ["https://www.sparkwavecredit.com/img/banner/spark-credit-og.jpg"],
   },
   alternates: {

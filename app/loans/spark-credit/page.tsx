@@ -539,7 +539,9 @@ export default function SparkCreditPage() {
                 </div>
                 <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 bg-primary text-white p-3 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg">
                   <div className="text-center">
-                    <p className="text-lg sm:text-2xl font-bold">24-48h</p>
+                    <p className="text-lg sm:text-2xl font-bold">
+                      Within 3 Mins
+                    </p>
                     <p className="text-xs sm:text-sm">Quick Approval</p>
                   </div>
                 </div>
