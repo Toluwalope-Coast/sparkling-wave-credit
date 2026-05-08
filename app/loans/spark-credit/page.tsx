@@ -340,7 +340,7 @@ export default function SparkCreditPage() {
     },
     {
       number: "04",
-      title: "Approval within 3 minutes)",
+      title: "Approval within 3 minutes",
       description: "Loan offer sent with detailed repayment plan.",
       icon: FiCheckCircle,
     },
