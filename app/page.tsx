@@ -742,8 +742,8 @@ export default function Home() {
                   color: "text-green-600",
                 },
                 {
-                  number: "1,000+",
-                  label: "customers served",
+                  number: "5X+",
+                  label: "Borrower growth (Monthly)",
                   color: "text-blue-600",
                 },
                 {
