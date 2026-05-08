@@ -53,17 +53,17 @@ export default function AboutPage() {
     {
       question: "How long does the loan approval process take?",
       answer:
-        "The duration of the loan approval process can vary depending on several factors, including the lender's internal procedures, the complexity of the loan application, and the completeness of the applicant's documentation. In general, the process typically takes anywhere from a few hours to several weeks.",
+        "The duration of the loan approval process can vary depending on loan products. For Sparkwave Credit, approval is within 3 minutes. For other products, it may take 24-48 hours as we conduct thorough assessments to ensure responsible lending.",
     },
     {
       question: "What documents are required for a loan application?",
       answer:
-        "For the client, 3 passport photos & ID card, 2 guarantors & ID cards are required.",
+        "For Sparkwave Credit none. For Sparkwave SME, the client, 3 passport photos & ID card, 2 guarantors & ID cards are required.",
     },
     {
       question: "Can I apply for a loan online?",
       answer:
-        "YES. Contact our Customer Service via Call/WhatsApp for a seamless online application process.",
+        "YES. For Sparkwave Credit dial *347*512# and other loan products contact our Customer Service via Call/WhatsApp for a seamless online application process.",
     },
     {
       question: "What are the eligibility criteria for obtaining a loan?",
