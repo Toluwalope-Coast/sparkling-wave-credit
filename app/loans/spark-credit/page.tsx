@@ -321,8 +321,8 @@ export default function SparkCreditPage() {
   const howItWorks = [
     {
       number: "01",
-      title: "Apply, Dial *347*855#",
-      description: `No Smartphone needed, works on any phone. Dial *347*855# or visit our website to start your application.`,
+      title: "Apply, Dial *347*512#",
+      description: `No Smartphone needed, works on any phone. Dial *347*512# or visit our website to start your application.`,
       icon: FiSmartphone,
     },
     {
