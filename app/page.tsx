@@ -173,7 +173,7 @@ export default function Home() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
-                    href="/loans"
+                    href="#"
                     className="bg-secondary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-secondary-400 transition-all duration-300 inline-flex items-center gap-2 group"
                   >
                     Apply Now
@@ -714,7 +714,7 @@ export default function Home() {
 
             <div className="text-center mt-12">
               <Link
-                href="/loans"
+                href="#"
                 className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-600 transition-all duration-300"
               >
                 Apply Now
@@ -881,7 +881,7 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Link
                 href="/blog"
                 className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-600 transition-all duration-300"
@@ -889,7 +889,7 @@ export default function Home() {
                 Visit Blog
                 <FiArrowRight className="w-5 h-5" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 

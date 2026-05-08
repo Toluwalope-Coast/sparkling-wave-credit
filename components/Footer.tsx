@@ -109,19 +109,19 @@ const Footer: React.FC = () => {
             <li>
               <Link
                 href="/loans/spark-green"
-                className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
+                className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group cursor-not-allowed"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Sparkwave Green
+                Sparkwave Green [coming soon]
               </Link>
             </li>
             <li>
               <Link
                 href="/loans/spark-lyfestyle"
-                className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group"
+                className="hover:text-secondary transition-colors duration-200 flex items-center gap-2 group cursor-not-allowed"
               >
                 <span className="w-2 h-2 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-200"></span>
-                Sparkwave Lyfestyle
+                Sparkwave Lyfestyle [coming soon]
               </Link>
             </li>
             <li>
