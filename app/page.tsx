@@ -55,7 +55,7 @@ export default function Home() {
     {
       question: "How fast will I receive my loan?",
       answer:
-        "Most approved loans are disbursed within 24 hours after successful verification.",
+        "Most approved loans are disbursed within 3 minutes after successful verification.",
     },
     {
       question: "Do you charge hidden fees?",
@@ -70,7 +70,7 @@ export default function Home() {
     {
       question: "Which products do you offer?",
       answer:
-        "Spark SME (business loans), Spark Credit (civil servant loans via Remita), Spark Green (solar & climate finance), and Spark Lyfestyle (BNPL).",
+        "Spark SME (business loans), Spark Credit (civil servant loans via Remita), Spark Green (solar & climate finance) [Coming Soon], and Spark Lyfestyle (BNPL) [Coming Soon].",
     },
   ];
 
@@ -383,7 +383,7 @@ export default function Home() {
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <FiCheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                      Quick approval in 24-48 hours
+                      Quick approval within 3 minutes
                     </li>
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <FiCheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
@@ -613,7 +613,7 @@ export default function Home() {
                   number: "03",
                   title: "Receive Your Funds",
                   description:
-                    "Quick disbursement directly to your account. Get your funds within 24 hours of approval.",
+                    "Quick disbursement directly to your account. Get your funds within 3 minutes of approval.",
                 },
               ].map((step, index) => (
                 <div key={index} className="text-center">
