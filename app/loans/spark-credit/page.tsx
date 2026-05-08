@@ -131,7 +131,7 @@ const PreQualificationForm = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     setFormData({
       ...formData,
@@ -322,8 +322,7 @@ export default function SparkCreditPage() {
     {
       number: "01",
       title: "Apply, Dial *347*855#",
-      description:
-        `No Smartphone needed, works on any phone. Dial *347*855# or visit our website to start your application.`,
+      description: `No Smartphone needed, works on any phone. Dial *347*855# or visit our website to start your application.`,
       icon: FiSmartphone,
     },
     {
@@ -341,7 +340,7 @@ export default function SparkCreditPage() {
     },
     {
       number: "04",
-      title: "Approval (24–48h)",
+      title: "Approval within 3 minutes)",
       description: "Loan offer sent with detailed repayment plan.",
       icon: FiCheckCircle,
     },
@@ -361,7 +360,7 @@ export default function SparkCreditPage() {
     },
     {
       question: "How long does approval take?",
-      answer: "Most applications are approved within 24–48 hours.",
+      answer: "Most applications are approved within 3 minutes.",
     },
     {
       question: "Do I need collateral?",
@@ -393,7 +392,7 @@ export default function SparkCreditPage() {
       name: "Ibrahim Mohammed",
       role: "Federal Ministry Staff",
       content:
-        "I got ₦500,000 in 48 hours without collateral. The Remita deductions give me peace of mind.",
+        "I got ₦500,000 in 3 minutes without collateral. The Remita deductions give me peace of mind.",
       avatar: "/img/testmonial/Ibrahim.jpg",
     },
   ];
@@ -402,8 +401,9 @@ export default function SparkCreditPage() {
     <main className="min-h-screen">
       {/* Sticky Apply Button */}
       <div
-        className={`fixed top-4 right-4 z-50 transition-all duration-300 ${isSticky ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-          }`}
+        className={`fixed top-4 right-4 z-50 transition-all duration-300 ${
+          isSticky ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+        }`}
       >
         <Link
           href="#apply"
@@ -754,17 +754,19 @@ export default function SparkCreditPage() {
                       {item.question}
                     </h3>
                     <div
-                      className={`transition-transform duration-300 ${openFAQ === index ? "rotate-180" : "rotate-0"
-                        }`}
+                      className={`transition-transform duration-300 ${
+                        openFAQ === index ? "rotate-180" : "rotate-0"
+                      }`}
                     >
                       <FiChevronDown className="text-primary text-2xl" />
                     </div>
                   </div>
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${openFAQ === index
-                      ? "max-h-96 opacity-100"
-                      : "max-h-0 opacity-0"
-                      }`}
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openFAQ === index
+                        ? "max-h-96 opacity-100"
+                        : "max-h-0 opacity-0"
+                    }`}
                   >
                     <div className="px-6 pb-6">
                       <p className="text-gray-600 leading-relaxed">
