@@ -298,7 +298,7 @@ export default function SparkCreditPage() {
     {
       icon: FiZap,
       title: "Quick Disbursement",
-      description: "Funds released within 24–48 hours",
+      description: "Funds released within 3 minutes",
       color: "text-green-600",
       bgColor: "bg-green-50",
     },
@@ -888,7 +888,7 @@ export default function SparkCreditPage() {
                 Civil Servants Deserve Stress-Free Credit
               </h2>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Apply now and access SparkWave Credit in just 24–48 hours. No
+                Apply now and access SparkWave Credit in just 3 minutes. No
                 collateral, no stress, just simple credit when you need it.
               </p>
             </div>

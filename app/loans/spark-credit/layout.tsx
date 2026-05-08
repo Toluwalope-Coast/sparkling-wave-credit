@@ -125,7 +125,7 @@ export default function SparkCreditLayout({
                 name: "How long does approval take?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Most applications are approved within 24–48 hours.",
+                  text: "Most applications are approved within 3 minutes.",
                 },
               },
               {
@@ -216,7 +216,7 @@ export default function SparkCreditLayout({
               {
                 "@type": "HowToStep",
                 name: "Approval",
-                text: "Loan approval within 24–48 hours. Offer shared with repayment plan.",
+                text: "Loan approval within 3 minutes. Offer shared with repayment plan.",
                 url: "https://www.sparkwavecredit.com/loans/spark-credit#approval",
               },
               {
