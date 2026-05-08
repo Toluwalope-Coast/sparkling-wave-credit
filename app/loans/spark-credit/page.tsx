@@ -376,7 +376,8 @@ export default function SparkCreditPage() {
     },
     {
       question: "What documents do I need?",
-      answer: "Valid ID, BVN, and last 3 months' payslip or Remita records.",
+      answer:
+        "Valid ID, BVN, and last 6 months' Salary history and Loan history.",
     },
   ];
 
@@ -392,7 +393,7 @@ export default function SparkCreditPage() {
       name: "Ibrahim Mohammed",
       role: "Federal Ministry Staff",
       content:
-        "I got ₦500,000 in 3 minutes without collateral. The Remita deductions give me peace of mind.",
+        "I got ₦200,000 in 3 minutes without collateral. The Remita deductions give me peace of mind.",
       avatar: "/img/testmonial/Ibrahim.jpg",
     },
   ];
@@ -539,9 +540,7 @@ export default function SparkCreditPage() {
                 </div>
                 <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 bg-primary text-white p-3 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg">
                   <div className="text-center">
-                    <p className="text-lg sm:text-2xl font-bold">
-                      Within 3 Mins
-                    </p>
+                    <p className="text-lg sm:text-2xl font-bold">In 3 Mins</p>
                     <p className="text-xs sm:text-sm">Quick Approval</p>
                   </div>
                 </div>
@@ -622,11 +621,13 @@ export default function SparkCreditPage() {
                   </div>
                   <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
                     <FiFileText className="w-6 h-6 text-primary" />
-                    <span className="text-gray-700">Payslips (3 months)</span>
+                    <span className="text-gray-700">
+                      Salary History (6 months)
+                    </span>
                   </div>
                   <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
                     <FiFileText className="w-6 h-6 text-primary" />
-                    <span className="text-gray-700">Remita Records</span>
+                    <span className="text-gray-700">Loan History</span>
                   </div>
                 </div>
               </div>

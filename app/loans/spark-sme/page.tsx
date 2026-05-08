@@ -134,7 +134,7 @@ const PreQualificationForm = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     setFormData({
       ...formData,
@@ -309,7 +309,7 @@ export default function SparkSMEPage() {
     },
     {
       number: "03",
-      title: "Approval (24–72h)",
+      title: "Approval (24–48h)",
       description:
         "We evaluate your eligibility and share an offer with transparent fees.",
       icon: FiClock,
@@ -334,7 +334,7 @@ export default function SparkSMEPage() {
     },
     {
       question: "How long does approval take?",
-      answer: "Most applications are processed within 24–72 hours.",
+      answer: "Most applications are processed within 24–48 hours.",
     },
     {
       question: "Do I need collateral?",
@@ -385,7 +385,7 @@ export default function SparkSMEPage() {
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 leading-relaxed mb-8 animate-fade-in-up animation-delay-200">
               Fast, flexible SME loans for working capital, equipment, and
-              expansion — with transparent fees and quick approval (24–72h).
+              expansion — with transparent fees and quick approval (24–48h).
             </p>
 
             {/* Trust Badges */}
@@ -491,7 +491,7 @@ export default function SparkSMEPage() {
                   <FiBriefcase className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Quick Approval (24–72h)
+                  Quick Approval (24–48h)
                 </h3>
                 <p className="text-gray-600">
                   Fast screening and decision process

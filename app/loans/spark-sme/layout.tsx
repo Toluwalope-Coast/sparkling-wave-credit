@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Spark SME — Business Loans for Nigerian SMEs | Spark Wave Credit",
   description:
-    "Fast, flexible SME loans for working capital, equipment, and expansion. Transparent fees, quick approval (24–72h). Apply online with Spark Wave.",
+    "Fast, flexible SME loans for working capital, equipment, and expansion. Transparent fees, quick approval (24–48h). Apply online with Spark Wave.",
   keywords:
     "SME loans Nigeria, business loans Nigeria, Spark SME, Spark Wave Credit, working capital loan, equipment financing, expansion loans, small business funding, quick SME loans, civil servant loans alternative, Nigerian SME financing",
   authors: [{ name: "Spark Wave Credit" }],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Spark Wave Credit",
     title: "Spark SME — Business Loans for Nigerian SMEs",
     description:
-      "Fast, flexible SME loans for working capital, equipment, and expansion. Transparent fees, quick approval (24–72h).",
+      "Fast, flexible SME loans for working capital, equipment, and expansion. Transparent fees, quick approval (24–48h).",
     images: [
       {
         url: "https://www.sparkwavecredit.com/img/banner/spark-sme-og.jpg",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Spark SME — Business Loans for Nigerian SMEs",
     description:
-      "Fast, flexible SME loans for working capital, equipment, and expansion. Transparent fees, quick approval (24–72h).",
+      "Fast, flexible SME loans for working capital, equipment, and expansion. Transparent fees, quick approval (24–48h).",
     images: ["https://www.sparkwavecredit.com/img/banner/spark-sme-og.jpg"],
   },
   alternates: {
@@ -71,7 +71,7 @@ export default function SparkSMELayout({
             url: "https://www.sparkwavecredit.com/loans/spark-sme",
             serviceType: "Business loan service for SMEs",
             description:
-              "Fast, flexible SME loans for Nigerian businesses — working capital, equipment, and expansion. Transparent fees and quick approval (24–72h).",
+              "Fast, flexible SME loans for Nigerian businesses — working capital, equipment, and expansion. Transparent fees and quick approval (24–48h).",
             brand: { "@type": "Brand", name: "Spark Wave" },
             provider: {
               "@type": "FinancialService",
@@ -250,7 +250,7 @@ export default function SparkSMELayout({
               },
               {
                 "@type": "HowToStep",
-                name: "Approval (24–72h)",
+                name: "Approval (24–48h)",
                 text: "We evaluate your eligibility and share an offer with transparent fees.",
                 url: "https://www.sparkwavecredit.com/loans/spark-sme#approve",
               },
